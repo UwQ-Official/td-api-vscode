@@ -1,0 +1,3686 @@
+// Generated with a python script, with the help of Gemini
+// Generated from https://teardowngame.com/modding/api.xml v1.6.0
+{
+    "GetIntParam": {
+        "prefix": "GetIntParam",
+        "body": [
+            "${0:GetIntParam(}${1:name}, ${2:default})"
+        ],
+        "description": "GetIntParam(name: string, default: number)"
+    },
+    "GetFloatParam": {
+        "prefix": "GetFloatParam",
+        "body": [
+            "${0:GetFloatParam(}${1:name}, ${2:default})"
+        ],
+        "description": "GetFloatParam(name: string, default: number)"
+    },
+    "GetBoolParam": {
+        "prefix": "GetBoolParam",
+        "body": [
+            "${0:GetBoolParam(}${1:name}, ${2:default})"
+        ],
+        "description": "GetBoolParam(name: string, default: boolean)"
+    },
+    "GetStringParam": {
+        "prefix": "GetStringParam",
+        "body": [
+            "${0:GetStringParam(}${1:name}, ${2:default})"
+        ],
+        "description": "GetStringParam(name: string, default: string)"
+    },
+    "GetColorParam": {
+        "prefix": "GetColorParam",
+        "body": [
+            "${0:GetColorParam(}${1:name}, ${2:default})"
+        ],
+        "description": "GetColorParam(name: string, default: number)"
+    },
+    "GetVersion": {
+        "prefix": "GetVersion",
+        "body": [
+            "${0:GetVersion(}})"
+        ],
+        "description": "GetVersion()"
+    },
+    "HasVersion": {
+        "prefix": "HasVersion",
+        "body": [
+            "${0:HasVersion(}${1:version})"
+        ],
+        "description": "HasVersion(version: string)"
+    },
+    "GetTime": {
+        "prefix": "GetTime",
+        "body": [
+            "${0:GetTime(}})"
+        ],
+        "description": "GetTime()"
+    },
+    "GetTimeStep": {
+        "prefix": "GetTimeStep",
+        "body": [
+            "${0:GetTimeStep(}})"
+        ],
+        "description": "GetTimeStep()"
+    },
+    "InputLastPressedKey": {
+        "prefix": "InputLastPressedKey",
+        "body": [
+            "${0:InputLastPressedKey(}})"
+        ],
+        "description": "InputLastPressedKey()"
+    },
+    "InputPressed": {
+        "prefix": "InputPressed",
+        "body": [
+            "${0:InputPressed(}${1:input})"
+        ],
+        "description": "InputPressed(input: string)"
+    },
+    "InputReleased": {
+        "prefix": "InputReleased",
+        "body": [
+            "${0:InputReleased(}${1:input})"
+        ],
+        "description": "InputReleased(input: string)"
+    },
+    "InputDown": {
+        "prefix": "InputDown",
+        "body": [
+            "${0:InputDown(}${1:input})"
+        ],
+        "description": "InputDown(input: string)"
+    },
+    "InputValue": {
+        "prefix": "InputValue",
+        "body": [
+            "${0:InputValue(}${1:input})"
+        ],
+        "description": "InputValue(input: string)"
+    },
+    "InputClear": {
+        "prefix": "InputClear",
+        "body": [
+            "InputClear()"
+        ],
+        "description": "InputClear()"
+    },
+    "InputResetOnTransition": {
+        "prefix": "InputResetOnTransition",
+        "body": [
+            "InputResetOnTransition()"
+        ],
+        "description": "InputResetOnTransition()"
+    },
+    "LastInputDevice": {
+        "prefix": "LastInputDevice",
+        "body": [
+            "${0:LastInputDevice(}})"
+        ],
+        "description": "LastInputDevice()"
+    },
+    "SetValue": {
+        "prefix": "SetValue",
+        "body": [
+            "SetValue(${1:variable}, ${2:value}, ${3:transition}, ${4:time})"
+        ],
+        "description": "SetValue(variable: string, value: number, transition: string, time: number)"
+    },
+    "SetValueInTable": {
+        "prefix": "SetValueInTable",
+        "body": [
+            "SetValueInTable(${1:tableId}, ${2:memberName}, ${3:newValue}, ${4:type}, ${5:length})"
+        ],
+        "description": "SetValueInTable(tableId: table, memberName: string, newValue: number, type: string, length: number)"
+    },
+    "PauseMenuButton": {
+        "prefix": "PauseMenuButton",
+        "body": [
+            "${0:PauseMenuButton(}${1:title}, ${2:location})"
+        ],
+        "description": "PauseMenuButton(title: string, location: string)"
+    },
+    "HasFile": {
+        "prefix": "HasFile",
+        "body": [
+            "${0:HasFile(}${1:path})"
+        ],
+        "description": "HasFile(path: string)"
+    },
+    "StartLevel": {
+        "prefix": "StartLevel",
+        "body": [
+            "StartLevel(${1:mission}, ${2:path}, ${3:layers}, ${4:passThrough})"
+        ],
+        "description": "StartLevel(mission: string, path: string, layers: string, passThrough: boolean)"
+    },
+    "SetPaused": {
+        "prefix": "SetPaused",
+        "body": [
+            "SetPaused(${1:paused})"
+        ],
+        "description": "SetPaused(paused: boolean)"
+    },
+    "Restart": {
+        "prefix": "Restart",
+        "body": [
+            "Restart()"
+        ],
+        "description": "Restart()"
+    },
+    "Menu": {
+        "prefix": "Menu",
+        "body": [
+            "Menu()"
+        ],
+        "description": "Menu()"
+    },
+    "ClearKey": {
+        "prefix": "ClearKey",
+        "body": [
+            "ClearKey(${1:key})"
+        ],
+        "description": "ClearKey(key: string)"
+    },
+    "ListKeys": {
+        "prefix": "ListKeys",
+        "body": [
+            "${0:ListKeys(}${1:parent})"
+        ],
+        "description": "ListKeys(parent: string)"
+    },
+    "HasKey": {
+        "prefix": "HasKey",
+        "body": [
+            "${0:HasKey(}${1:key})"
+        ],
+        "description": "HasKey(key: string)"
+    },
+    "SetInt": {
+        "prefix": "SetInt",
+        "body": [
+            "SetInt(${1:key}, ${2:value})"
+        ],
+        "description": "SetInt(key: string, value: number)"
+    },
+    "GetInt": {
+        "prefix": "GetInt",
+        "body": [
+            "${0:GetInt(}${1:key})"
+        ],
+        "description": "GetInt(key: string)"
+    },
+    "SetFloat": {
+        "prefix": "SetFloat",
+        "body": [
+            "SetFloat(${1:key}, ${2:value})"
+        ],
+        "description": "SetFloat(key: string, value: number)"
+    },
+    "GetFloat": {
+        "prefix": "GetFloat",
+        "body": [
+            "${0:GetFloat(}${1:key})"
+        ],
+        "description": "GetFloat(key: string)"
+    },
+    "SetBool": {
+        "prefix": "SetBool",
+        "body": [
+            "SetBool(${1:key}, ${2:value})"
+        ],
+        "description": "SetBool(key: string, value: boolean)"
+    },
+    "GetBool": {
+        "prefix": "GetBool",
+        "body": [
+            "${0:GetBool(}${1:key})"
+        ],
+        "description": "GetBool(key: string)"
+    },
+    "SetString": {
+        "prefix": "SetString",
+        "body": [
+            "SetString(${1:key}, ${2:value})"
+        ],
+        "description": "SetString(key: string, value: string)"
+    },
+    "GetString": {
+        "prefix": "GetString",
+        "body": [
+            "${0:GetString(}${1:key})"
+        ],
+        "description": "GetString(key: string)"
+    },
+    "GetEventCount": {
+        "prefix": "GetEventCount",
+        "body": [
+            "${0:GetEventCount(}${1:type})"
+        ],
+        "description": "GetEventCount(type: string)"
+    },
+    "GetEvent": {
+        "prefix": "GetEvent",
+        "body": [
+            "${0:GetEvent(}${1:type}, ${2:index})"
+        ],
+        "description": "GetEvent(type: string, index: number)"
+    },
+    "SetColor": {
+        "prefix": "SetColor",
+        "body": [
+            "SetColor(${1:key}, ${2:r}, ${3:g}, ${4:b}, ${5:a})"
+        ],
+        "description": "SetColor(key: string, r: number, g: number, b: number, a: number)"
+    },
+    "GetColor": {
+        "prefix": "GetColor",
+        "body": [
+            "${0:GetColor(}${1:key})"
+        ],
+        "description": "GetColor(key: string)"
+    },
+    "GetTranslatedStringByKey": {
+        "prefix": "GetTranslatedStringByKey",
+        "body": [
+            "${0:GetTranslatedStringByKey(}${1:key}, ${2:default})"
+        ],
+        "description": "GetTranslatedStringByKey(key: string, default: string)"
+    },
+    "HasTranslationByKey": {
+        "prefix": "HasTranslationByKey",
+        "body": [
+            "${0:HasTranslationByKey(}${1:key})"
+        ],
+        "description": "HasTranslationByKey(key: string)"
+    },
+    "LoadLanguageTable": {
+        "prefix": "LoadLanguageTable",
+        "body": [
+            "LoadLanguageTable(${1:id})"
+        ],
+        "description": "LoadLanguageTable(id: number)"
+    },
+    "GetUserNickname": {
+        "prefix": "GetUserNickname",
+        "body": [
+            "${0:GetUserNickname(}${1:id})"
+        ],
+        "description": "GetUserNickname(id: number)"
+    },
+    "Vec": {
+        "prefix": "Vec",
+        "body": [
+            "${0:Vec(}${1:x}, ${2:y}, ${3:z})"
+        ],
+        "description": "Vec(x: number, y: number, z: number)"
+    },
+    "VecCopy": {
+        "prefix": "VecCopy",
+        "body": [
+            "${0:VecCopy(}${1:org})"
+        ],
+        "description": "VecCopy(org: TVec)"
+    },
+    "VecStr": {
+        "prefix": "VecStr",
+        "body": [
+            "${0:VecStr(}${1:vector})"
+        ],
+        "description": "VecStr(vector: TVec)"
+    },
+    "VecLength": {
+        "prefix": "VecLength",
+        "body": [
+            "${0:VecLength(}${1:vec})"
+        ],
+        "description": "VecLength(vec: TVec)"
+    },
+    "VecNormalize": {
+        "prefix": "VecNormalize",
+        "body": [
+            "${0:VecNormalize(}${1:vec})"
+        ],
+        "description": "VecNormalize(vec: TVec)"
+    },
+    "VecScale": {
+        "prefix": "VecScale",
+        "body": [
+            "${0:VecScale(}${1:vec}, ${2:scale})"
+        ],
+        "description": "VecScale(vec: TVec, scale: number)"
+    },
+    "VecAdd": {
+        "prefix": "VecAdd",
+        "body": [
+            "${0:VecAdd(}${1:a}, ${2:b})"
+        ],
+        "description": "VecAdd(a: TVec, b: TVec)"
+    },
+    "VecSub": {
+        "prefix": "VecSub",
+        "body": [
+            "${0:VecSub(}${1:a}, ${2:b})"
+        ],
+        "description": "VecSub(a: TVec, b: TVec)"
+    },
+    "VecDot": {
+        "prefix": "VecDot",
+        "body": [
+            "${0:VecDot(}${1:a}, ${2:b})"
+        ],
+        "description": "VecDot(a: TVec, b: TVec)"
+    },
+    "VecCross": {
+        "prefix": "VecCross",
+        "body": [
+            "${0:VecCross(}${1:a}, ${2:b})"
+        ],
+        "description": "VecCross(a: TVec, b: TVec)"
+    },
+    "VecLerp": {
+        "prefix": "VecLerp",
+        "body": [
+            "${0:VecLerp(}${1:a}, ${2:b}, ${3:t})"
+        ],
+        "description": "VecLerp(a: TVec, b: TVec, t: number)"
+    },
+    "Quat": {
+        "prefix": "Quat",
+        "body": [
+            "${0:Quat(}${1:x}, ${2:y}, ${3:z}, ${4:w})"
+        ],
+        "description": "Quat(x: number, y: number, z: number, w: number)"
+    },
+    "QuatCopy": {
+        "prefix": "QuatCopy",
+        "body": [
+            "${0:QuatCopy(}${1:org})"
+        ],
+        "description": "QuatCopy(org: TQuat)"
+    },
+    "QuatAxisAngle": {
+        "prefix": "QuatAxisAngle",
+        "body": [
+            "${0:QuatAxisAngle(}${1:axis}, ${2:angle})"
+        ],
+        "description": "QuatAxisAngle(axis: TVec, angle: number)"
+    },
+    "QuatDeltaNormals": {
+        "prefix": "QuatDeltaNormals",
+        "body": [
+            "${0:QuatDeltaNormals(}${1:normal0}, ${2:normal1})"
+        ],
+        "description": "QuatDeltaNormals(normal0: TVec, normal1: TVec)"
+    },
+    "QuatDeltaVectors": {
+        "prefix": "QuatDeltaVectors",
+        "body": [
+            "${0:QuatDeltaVectors(}${1:vector0}, ${2:vector1})"
+        ],
+        "description": "QuatDeltaVectors(vector0: TVec, vector1: TVec)"
+    },
+    "QuatEuler": {
+        "prefix": "QuatEuler",
+        "body": [
+            "${0:QuatEuler(}${1:x}, ${2:y}, ${3:z})"
+        ],
+        "description": "QuatEuler(x: number, y: number, z: number)"
+    },
+    "QuatAlignXZ": {
+        "prefix": "QuatAlignXZ",
+        "body": [
+            "${0:QuatAlignXZ(}${1:xAxis}, ${2:zAxis})"
+        ],
+        "description": "QuatAlignXZ(xAxis: TVec, zAxis: TVec)"
+    },
+    "GetQuatEuler": {
+        "prefix": "GetQuatEuler",
+        "body": [
+            "${0:GetQuatEuler(}${1:quat})"
+        ],
+        "description": "GetQuatEuler(quat: TQuat)"
+    },
+    "QuatLookAt": {
+        "prefix": "QuatLookAt",
+        "body": [
+            "${0:QuatLookAt(}${1:eye}, ${2:target})"
+        ],
+        "description": "QuatLookAt(eye: TVec, target: TVec)"
+    },
+    "QuatSlerp": {
+        "prefix": "QuatSlerp",
+        "body": [
+            "${0:QuatSlerp(}${1:a}, ${2:b}, ${3:t})"
+        ],
+        "description": "QuatSlerp(a: TQuat, b: TQuat, t: number)"
+    },
+    "QuatStr": {
+        "prefix": "QuatStr",
+        "body": [
+            "${0:QuatStr(}${1:quat})"
+        ],
+        "description": "QuatStr(quat: TQuat)"
+    },
+    "QuatRotateQuat": {
+        "prefix": "QuatRotateQuat",
+        "body": [
+            "${0:QuatRotateQuat(}${1:a}, ${2:b})"
+        ],
+        "description": "QuatRotateQuat(a: TQuat, b: TQuat)"
+    },
+    "QuatRotateVec": {
+        "prefix": "QuatRotateVec",
+        "body": [
+            "${0:QuatRotateVec(}${1:a}, ${2:vec})"
+        ],
+        "description": "QuatRotateVec(a: TQuat, vec: TVec)"
+    },
+    "Transform": {
+        "prefix": "Transform",
+        "body": [
+            "${0:Transform(}${1:pos}, ${2:rot})"
+        ],
+        "description": "Transform(pos: TVec, rot: TQuat)"
+    },
+    "TransformCopy": {
+        "prefix": "TransformCopy",
+        "body": [
+            "${0:TransformCopy(}${1:org})"
+        ],
+        "description": "TransformCopy(org: TTransform)"
+    },
+    "TransformStr": {
+        "prefix": "TransformStr",
+        "body": [
+            "${0:TransformStr(}${1:transform})"
+        ],
+        "description": "TransformStr(transform: TTransform)"
+    },
+    "TransformToParentTransform": {
+        "prefix": "TransformToParentTransform",
+        "body": [
+            "${0:TransformToParentTransform(}${1:parent}, ${2:child})"
+        ],
+        "description": "TransformToParentTransform(parent: TTransform, child: TTransform)"
+    },
+    "TransformToLocalTransform": {
+        "prefix": "TransformToLocalTransform",
+        "body": [
+            "${0:TransformToLocalTransform(}${1:parent}, ${2:child})"
+        ],
+        "description": "TransformToLocalTransform(parent: TTransform, child: TTransform)"
+    },
+    "TransformToParentVec": {
+        "prefix": "TransformToParentVec",
+        "body": [
+            "${0:TransformToParentVec(}${1:t}, ${2:v})"
+        ],
+        "description": "TransformToParentVec(t: TTransform, v: TVec)"
+    },
+    "TransformToLocalVec": {
+        "prefix": "TransformToLocalVec",
+        "body": [
+            "${0:TransformToLocalVec(}${1:t}, ${2:v})"
+        ],
+        "description": "TransformToLocalVec(t: TTransform, v: TVec)"
+    },
+    "TransformToParentPoint": {
+        "prefix": "TransformToParentPoint",
+        "body": [
+            "${0:TransformToParentPoint(}${1:t}, ${2:p})"
+        ],
+        "description": "TransformToParentPoint(t: TTransform, p: TVec)"
+    },
+    "TransformToLocalPoint": {
+        "prefix": "TransformToLocalPoint",
+        "body": [
+            "${0:TransformToLocalPoint(}${1:t}, ${2:p})"
+        ],
+        "description": "TransformToLocalPoint(t: TTransform, p: TVec)"
+    },
+    "FindEntity": {
+        "prefix": "FindEntity",
+        "body": [
+            "${0:FindEntity(}${1:tag}, ${2:global}, ${3:type})"
+        ],
+        "description": "FindEntity(tag: string, global: boolean, type: string)"
+    },
+    "FindEntities": {
+        "prefix": "FindEntities",
+        "body": [
+            "${0:FindEntities(}${1:tag}, ${2:global}, ${3:type})"
+        ],
+        "description": "FindEntities(tag: string, global: boolean, type: string)"
+    },
+    "GetEntityChildren": {
+        "prefix": "GetEntityChildren",
+        "body": [
+            "${0:GetEntityChildren(}${1:handle}, ${2:tag}, ${3:recursive}, ${4:type})"
+        ],
+        "description": "GetEntityChildren(handle: number, tag: string, recursive: boolean, type: string)"
+    },
+    "GetEntityParent": {
+        "prefix": "GetEntityParent",
+        "body": [
+            "${0:GetEntityParent(}${1:handle}, ${2:tag}, ${3:type})"
+        ],
+        "description": "GetEntityParent(handle: number, tag: string, type: string)"
+    },
+    "SetTag": {
+        "prefix": "SetTag",
+        "body": [
+            "SetTag(${1:handle}, ${2:tag}, ${3:value})"
+        ],
+        "description": "SetTag(handle: number, tag: string, value: string)"
+    },
+    "RemoveTag": {
+        "prefix": "RemoveTag",
+        "body": [
+            "RemoveTag(${1:handle}, ${2:tag})"
+        ],
+        "description": "RemoveTag(handle: number, tag: string)"
+    },
+    "HasTag": {
+        "prefix": "HasTag",
+        "body": [
+            "${0:HasTag(}${1:handle}, ${2:tag})"
+        ],
+        "description": "HasTag(handle: number, tag: string)"
+    },
+    "GetTagValue": {
+        "prefix": "GetTagValue",
+        "body": [
+            "${0:GetTagValue(}${1:handle}, ${2:tag})"
+        ],
+        "description": "GetTagValue(handle: number, tag: string)"
+    },
+    "ListTags": {
+        "prefix": "ListTags",
+        "body": [
+            "${0:ListTags(}${1:handle})"
+        ],
+        "description": "ListTags(handle: number)"
+    },
+    "GetDescription": {
+        "prefix": "GetDescription",
+        "body": [
+            "${0:GetDescription(}${1:handle})"
+        ],
+        "description": "GetDescription(handle: number)"
+    },
+    "SetDescription": {
+        "prefix": "SetDescription",
+        "body": [
+            "SetDescription(${1:handle}, ${2:description})"
+        ],
+        "description": "SetDescription(handle: number, description: string)"
+    },
+    "Delete": {
+        "prefix": "Delete",
+        "body": [
+            "Delete(${1:handle})"
+        ],
+        "description": "Delete(handle: number)"
+    },
+    "IsHandleValid": {
+        "prefix": "IsHandleValid",
+        "body": [
+            "${0:IsHandleValid(}${1:handle})"
+        ],
+        "description": "IsHandleValid(handle: number)"
+    },
+    "GetEntityType": {
+        "prefix": "GetEntityType",
+        "body": [
+            "${0:GetEntityType(}${1:handle})"
+        ],
+        "description": "GetEntityType(handle: number)"
+    },
+    "GetProperty": {
+        "prefix": "GetProperty",
+        "body": [
+            "${0:GetProperty(}${1:handle}, ${2:property})"
+        ],
+        "description": "GetProperty(handle: number, property: string)"
+    },
+    "SetProperty": {
+        "prefix": "SetProperty",
+        "body": [
+            "SetProperty(${1:handle}, ${2:property}, ${3:value})"
+        ],
+        "description": "SetProperty(handle: number, property: string, value: any)"
+    },
+    "FindBody": {
+        "prefix": "FindBody",
+        "body": [
+            "${0:FindBody(}${1:tag}, ${2:global})"
+        ],
+        "description": "FindBody(tag: string, global: boolean)"
+    },
+    "FindBodies": {
+        "prefix": "FindBodies",
+        "body": [
+            "${0:FindBodies(}${1:tag}, ${2:global})"
+        ],
+        "description": "FindBodies(tag: string, global: boolean)"
+    },
+    "GetBodyTransform": {
+        "prefix": "GetBodyTransform",
+        "body": [
+            "${0:GetBodyTransform(}${1:handle})"
+        ],
+        "description": "GetBodyTransform(handle: number)"
+    },
+    "SetBodyTransform": {
+        "prefix": "SetBodyTransform",
+        "body": [
+            "SetBodyTransform(${1:handle}, ${2:transform})"
+        ],
+        "description": "SetBodyTransform(handle: number, transform: TTransform)"
+    },
+    "GetBodyMass": {
+        "prefix": "GetBodyMass",
+        "body": [
+            "${0:GetBodyMass(}${1:handle})"
+        ],
+        "description": "GetBodyMass(handle: number)"
+    },
+    "IsBodyDynamic": {
+        "prefix": "IsBodyDynamic",
+        "body": [
+            "${0:IsBodyDynamic(}${1:handle})"
+        ],
+        "description": "IsBodyDynamic(handle: number)"
+    },
+    "SetBodyDynamic": {
+        "prefix": "SetBodyDynamic",
+        "body": [
+            "SetBodyDynamic(${1:handle}, ${2:dynamic})"
+        ],
+        "description": "SetBodyDynamic(handle: number, dynamic: boolean)"
+    },
+    "SetBodyVelocity": {
+        "prefix": "SetBodyVelocity",
+        "body": [
+            "SetBodyVelocity(${1:handle}, ${2:velocity})"
+        ],
+        "description": "SetBodyVelocity(handle: number, velocity: TVec)"
+    },
+    "GetBodyVelocity": {
+        "prefix": "GetBodyVelocity",
+        "body": [
+            "${0:GetBodyVelocity(}${1:handle})"
+        ],
+        "description": "GetBodyVelocity(handle: number)"
+    },
+    "GetBodyVelocityAtPos": {
+        "prefix": "GetBodyVelocityAtPos",
+        "body": [
+            "${0:GetBodyVelocityAtPos(}${1:handle}, ${2:pos})"
+        ],
+        "description": "GetBodyVelocityAtPos(handle: number, pos: TVec)"
+    },
+    "SetBodyAngularVelocity": {
+        "prefix": "SetBodyAngularVelocity",
+        "body": [
+            "SetBodyAngularVelocity(${1:handle}, ${2:angVel})"
+        ],
+        "description": "SetBodyAngularVelocity(handle: number, angVel: TVec)"
+    },
+    "GetBodyAngularVelocity": {
+        "prefix": "GetBodyAngularVelocity",
+        "body": [
+            "${0:GetBodyAngularVelocity(}${1:handle})"
+        ],
+        "description": "GetBodyAngularVelocity(handle: number)"
+    },
+    "IsBodyActive": {
+        "prefix": "IsBodyActive",
+        "body": [
+            "${0:IsBodyActive(}${1:handle})"
+        ],
+        "description": "IsBodyActive(handle: number)"
+    },
+    "SetBodyActive": {
+        "prefix": "SetBodyActive",
+        "body": [
+            "SetBodyActive(${1:handle}, ${2:active})"
+        ],
+        "description": "SetBodyActive(handle: number, active: boolean)"
+    },
+    "ApplyBodyImpulse": {
+        "prefix": "ApplyBodyImpulse",
+        "body": [
+            "ApplyBodyImpulse(${1:handle}, ${2:position}, ${3:impulse})"
+        ],
+        "description": "ApplyBodyImpulse(handle: number, position: TVec, impulse: TVec)"
+    },
+    "GetBodyShapes": {
+        "prefix": "GetBodyShapes",
+        "body": [
+            "${0:GetBodyShapes(}${1:handle})"
+        ],
+        "description": "GetBodyShapes(handle: number)"
+    },
+    "GetBodyVehicle": {
+        "prefix": "GetBodyVehicle",
+        "body": [
+            "${0:GetBodyVehicle(}${1:body})"
+        ],
+        "description": "GetBodyVehicle(body: number)"
+    },
+    "GetBodyBounds": {
+        "prefix": "GetBodyBounds",
+        "body": [
+            "${0:GetBodyBounds(}${1:handle})"
+        ],
+        "description": "GetBodyBounds(handle: number)"
+    },
+    "GetBodyCenterOfMass": {
+        "prefix": "GetBodyCenterOfMass",
+        "body": [
+            "${0:GetBodyCenterOfMass(}${1:handle})"
+        ],
+        "description": "GetBodyCenterOfMass(handle: number)"
+    },
+    "IsBodyVisible": {
+        "prefix": "IsBodyVisible",
+        "body": [
+            "${0:IsBodyVisible(}${1:handle}, ${2:maxDist}, ${3:rejectTransparent})"
+        ],
+        "description": "IsBodyVisible(handle: number, maxDist: number, rejectTransparent: boolean)"
+    },
+    "IsBodyBroken": {
+        "prefix": "IsBodyBroken",
+        "body": [
+            "${0:IsBodyBroken(}${1:handle})"
+        ],
+        "description": "IsBodyBroken(handle: number)"
+    },
+    "IsBodyJointedToStatic": {
+        "prefix": "IsBodyJointedToStatic",
+        "body": [
+            "${0:IsBodyJointedToStatic(}${1:handle})"
+        ],
+        "description": "IsBodyJointedToStatic(handle: number)"
+    },
+    "DrawBodyOutline": {
+        "prefix": "DrawBodyOutline",
+        "body": [
+            "DrawBodyOutline(${1:handle}, ${2:r}, ${3:g}, ${4:b}, ${5:a})"
+        ],
+        "description": "DrawBodyOutline(handle: number, r: number, g: number, b: number, a: number)"
+    },
+    "DrawBodyHighlight": {
+        "prefix": "DrawBodyHighlight",
+        "body": [
+            "DrawBodyHighlight(${1:handle}, ${2:amount})"
+        ],
+        "description": "DrawBodyHighlight(handle: number, amount: number)"
+    },
+    "GetBodyClosestPoint": {
+        "prefix": "GetBodyClosestPoint",
+        "body": [
+            "${0:GetBodyClosestPoint(}${1:body}, ${2:origin})"
+        ],
+        "description": "GetBodyClosestPoint(body: number, origin: TVec)"
+    },
+    "ConstrainVelocity": {
+        "prefix": "ConstrainVelocity",
+        "body": [
+            "ConstrainVelocity(${1:bodyA}, ${2:bodyB}, ${3:point}, ${4:dir}, ${5:relVel}, ${6:min}, ${7:max})"
+        ],
+        "description": "ConstrainVelocity(bodyA: number, bodyB: number, point: TVec, dir: TVec, relVel: number, min: number, max: number)"
+    },
+    "ConstrainAngularVelocity": {
+        "prefix": "ConstrainAngularVelocity",
+        "body": [
+            "ConstrainAngularVelocity(${1:bodyA}, ${2:bodyB}, ${3:dir}, ${4:relAngVel}, ${5:min}, ${6:max})"
+        ],
+        "description": "ConstrainAngularVelocity(bodyA: number, bodyB: number, dir: TVec, relAngVel: number, min: number, max: number)"
+    },
+    "ConstrainPosition": {
+        "prefix": "ConstrainPosition",
+        "body": [
+            "ConstrainPosition(${1:bodyA}, ${2:bodyB}, ${3:pointA}, ${4:pointB}, ${5:maxVel}, ${6:maxImpulse})"
+        ],
+        "description": "ConstrainPosition(bodyA: number, bodyB: number, pointA: TVec, pointB: TVec, maxVel: number, maxImpulse: number)"
+    },
+    "ConstrainOrientation": {
+        "prefix": "ConstrainOrientation",
+        "body": [
+            "ConstrainOrientation(${1:bodyA}, ${2:bodyB}, ${3:quatA}, ${4:quatB}, ${5:maxAngVel}, ${6:maxAngImpulse})"
+        ],
+        "description": "ConstrainOrientation(bodyA: number, bodyB: number, quatA: TQuat, quatB: TQuat, maxAngVel: number, maxAngImpulse: number)"
+    },
+    "GetWorldBody": {
+        "prefix": "GetWorldBody",
+        "body": [
+            "${0:GetWorldBody(}})"
+        ],
+        "description": "GetWorldBody()"
+    },
+    "FindShape": {
+        "prefix": "FindShape",
+        "body": [
+            "${0:FindShape(}${1:tag}, ${2:global})"
+        ],
+        "description": "FindShape(tag: string, global: boolean)"
+    },
+    "FindShapes": {
+        "prefix": "FindShapes",
+        "body": [
+            "${0:FindShapes(}${1:tag}, ${2:global})"
+        ],
+        "description": "FindShapes(tag: string, global: boolean)"
+    },
+    "GetShapeLocalTransform": {
+        "prefix": "GetShapeLocalTransform",
+        "body": [
+            "${0:GetShapeLocalTransform(}${1:handle})"
+        ],
+        "description": "GetShapeLocalTransform(handle: number)"
+    },
+    "SetShapeLocalTransform": {
+        "prefix": "SetShapeLocalTransform",
+        "body": [
+            "SetShapeLocalTransform(${1:handle}, ${2:transform})"
+        ],
+        "description": "SetShapeLocalTransform(handle: number, transform: TTransform)"
+    },
+    "GetShapeWorldTransform": {
+        "prefix": "GetShapeWorldTransform",
+        "body": [
+            "${0:GetShapeWorldTransform(}${1:handle})"
+        ],
+        "description": "GetShapeWorldTransform(handle: number)"
+    },
+    "GetShapeBody": {
+        "prefix": "GetShapeBody",
+        "body": [
+            "${0:GetShapeBody(}${1:handle})"
+        ],
+        "description": "GetShapeBody(handle: number)"
+    },
+    "GetShapeJoints": {
+        "prefix": "GetShapeJoints",
+        "body": [
+            "${0:GetShapeJoints(}${1:shape})"
+        ],
+        "description": "GetShapeJoints(shape: number)"
+    },
+    "GetShapeLights": {
+        "prefix": "GetShapeLights",
+        "body": [
+            "${0:GetShapeLights(}${1:shape})"
+        ],
+        "description": "GetShapeLights(shape: number)"
+    },
+    "GetShapeBounds": {
+        "prefix": "GetShapeBounds",
+        "body": [
+            "${0:GetShapeBounds(}${1:handle})"
+        ],
+        "description": "GetShapeBounds(handle: number)"
+    },
+    "SetShapeEmissiveScale": {
+        "prefix": "SetShapeEmissiveScale",
+        "body": [
+            "SetShapeEmissiveScale(${1:handle}, ${2:scale})"
+        ],
+        "description": "SetShapeEmissiveScale(handle: number, scale: number)"
+    },
+    "SetShapeDensity": {
+        "prefix": "SetShapeDensity",
+        "body": [
+            "SetShapeDensity(${1:handle}, ${2:density})"
+        ],
+        "description": "SetShapeDensity(handle: number, density: number)"
+    },
+    "GetShapeMaterialAtPosition": {
+        "prefix": "GetShapeMaterialAtPosition",
+        "body": [
+            "${0:GetShapeMaterialAtPosition(}${1:handle}, ${2:pos})"
+        ],
+        "description": "GetShapeMaterialAtPosition(handle: number, pos: TVec)"
+    },
+    "GetShapeMaterialAtIndex": {
+        "prefix": "GetShapeMaterialAtIndex",
+        "body": [
+            "${0:GetShapeMaterialAtIndex(}${1:handle}, ${2:x}, ${3:y}, ${4:z})"
+        ],
+        "description": "GetShapeMaterialAtIndex(handle: number, x: number, y: number, z: number)"
+    },
+    "GetShapeSize": {
+        "prefix": "GetShapeSize",
+        "body": [
+            "${0:GetShapeSize(}${1:handle})"
+        ],
+        "description": "GetShapeSize(handle: number)"
+    },
+    "GetShapeVoxelCount": {
+        "prefix": "GetShapeVoxelCount",
+        "body": [
+            "${0:GetShapeVoxelCount(}${1:handle})"
+        ],
+        "description": "GetShapeVoxelCount(handle: number)"
+    },
+    "IsShapeVisible": {
+        "prefix": "IsShapeVisible",
+        "body": [
+            "${0:IsShapeVisible(}${1:handle}, ${2:maxDist}, ${3:rejectTransparent})"
+        ],
+        "description": "IsShapeVisible(handle: number, maxDist: number, rejectTransparent: boolean)"
+    },
+    "IsShapeBroken": {
+        "prefix": "IsShapeBroken",
+        "body": [
+            "${0:IsShapeBroken(}${1:handle})"
+        ],
+        "description": "IsShapeBroken(handle: number)"
+    },
+    "DrawShapeOutline": {
+        "prefix": "DrawShapeOutline",
+        "body": [
+            "DrawShapeOutline(${1:handle}, ${2:r}, ${3:g}, ${4:b}, ${5:a})"
+        ],
+        "description": "DrawShapeOutline(handle: number, r: number, g: number, b: number, a: number)"
+    },
+    "DrawShapeHighlight": {
+        "prefix": "DrawShapeHighlight",
+        "body": [
+            "DrawShapeHighlight(${1:handle}, ${2:amount})"
+        ],
+        "description": "DrawShapeHighlight(handle: number, amount: number)"
+    },
+    "SetShapeCollisionFilter": {
+        "prefix": "SetShapeCollisionFilter",
+        "body": [
+            "SetShapeCollisionFilter(${1:handle}, ${2:layer}, ${3:mask})"
+        ],
+        "description": "SetShapeCollisionFilter(handle: number, layer: number, mask: number)"
+    },
+    "CreateShape": {
+        "prefix": "CreateShape",
+        "body": [
+            "${0:CreateShape(}${1:body}, ${2:transform}, ${3:refShape})"
+        ],
+        "description": "CreateShape(body: number, transform: TTransform, refShape: number)"
+    },
+    "ClearShape": {
+        "prefix": "ClearShape",
+        "body": [
+            "ClearShape(${1:shape})"
+        ],
+        "description": "ClearShape(shape: number)"
+    },
+    "ResizeShape": {
+        "prefix": "ResizeShape",
+        "body": [
+            "${0:ResizeShape(}${1:shape}, ${2:xmi}, ${3:ymi}, ${4:zmi}, ${5:xma}, ${6:yma}, ${7:zma})"
+        ],
+        "description": "ResizeShape(shape: number, xmi: number, ymi: number, zmi: number, xma: number, yma: number, zma: number)"
+    },
+    "SetShapeBody": {
+        "prefix": "SetShapeBody",
+        "body": [
+            "SetShapeBody(${1:shape}, ${2:body}, ${3:transform})"
+        ],
+        "description": "SetShapeBody(shape: number, body: number, transform: TTransform)"
+    },
+    "CopyShapeContent": {
+        "prefix": "CopyShapeContent",
+        "body": [
+            "CopyShapeContent(${1:src}, ${2:dst})"
+        ],
+        "description": "CopyShapeContent(src: number, dst: number)"
+    },
+    "CopyShapePalette": {
+        "prefix": "CopyShapePalette",
+        "body": [
+            "CopyShapePalette(${1:src}, ${2:dst})"
+        ],
+        "description": "CopyShapePalette(src: number, dst: number)"
+    },
+    "GetShapePalette": {
+        "prefix": "GetShapePalette",
+        "body": [
+            "${0:GetShapePalette(}${1:shape})"
+        ],
+        "description": "GetShapePalette(shape: number)"
+    },
+    "GetShapeMaterial": {
+        "prefix": "GetShapeMaterial",
+        "body": [
+            "${0:GetShapeMaterial(}${1:shape}, ${2:entry})"
+        ],
+        "description": "GetShapeMaterial(shape: number, entry: number)"
+    },
+    "SetBrush": {
+        "prefix": "SetBrush",
+        "body": [
+            "SetBrush(${1:type}, ${2:size}, ${3:index}, ${4:object})"
+        ],
+        "description": "SetBrush(type: string, size: number, index: or, object: string)"
+    },
+    "DrawShapeLine": {
+        "prefix": "DrawShapeLine",
+        "body": [
+            "DrawShapeLine(${1:shape}, ${2:x0}, ${3:y0}, ${4:z0}, ${5:x1}, ${6:y1}, ${7:z1}, ${8:paint}, ${9:noOverwrite})"
+        ],
+        "description": "DrawShapeLine(shape: number, x0: number, y0: number, z0: number, x1: number, y1: number, z1: number, paint: boolean, noOverwrite: boolean)"
+    },
+    "DrawShapeBox": {
+        "prefix": "DrawShapeBox",
+        "body": [
+            "DrawShapeBox(${1:shape}, ${2:x0}, ${3:y0}, ${4:z0}, ${5:x1}, ${6:y1}, ${7:z1})"
+        ],
+        "description": "DrawShapeBox(shape: number, x0: number, y0: number, z0: number, x1: number, y1: number, z1: number)"
+    },
+    "ExtrudeShape": {
+        "prefix": "ExtrudeShape",
+        "body": [
+            "ExtrudeShape(${1:shape}, ${2:x}, ${3:y}, ${4:z}, ${5:dx}, ${6:dy}, ${7:dz}, ${8:steps}, ${9:mode})"
+        ],
+        "description": "ExtrudeShape(shape: number, x: number, y: number, z: number, dx: number, dy: number, dz: number, steps: number, mode: string)"
+    },
+    "TrimShape": {
+        "prefix": "TrimShape",
+        "body": [
+            "${0:TrimShape(}${1:shape})"
+        ],
+        "description": "TrimShape(shape: number)"
+    },
+    "SplitShape": {
+        "prefix": "SplitShape",
+        "body": [
+            "${0:SplitShape(}${1:shape}, ${2:removeResidual})"
+        ],
+        "description": "SplitShape(shape: number, removeResidual: boolean)"
+    },
+    "MergeShape": {
+        "prefix": "MergeShape",
+        "body": [
+            "${0:MergeShape(}${1:shape})"
+        ],
+        "description": "MergeShape(shape: number)"
+    },
+    "IsShapeDisconnected": {
+        "prefix": "IsShapeDisconnected",
+        "body": [
+            "${0:IsShapeDisconnected(}${1:shape})"
+        ],
+        "description": "IsShapeDisconnected(shape: number)"
+    },
+    "IsStaticShapeDetached": {
+        "prefix": "IsStaticShapeDetached",
+        "body": [
+            "${0:IsStaticShapeDetached(}${1:shape})"
+        ],
+        "description": "IsStaticShapeDetached(shape: number)"
+    },
+    "GetShapeClosestPoint": {
+        "prefix": "GetShapeClosestPoint",
+        "body": [
+            "${0:GetShapeClosestPoint(}${1:shape}, ${2:origin})"
+        ],
+        "description": "GetShapeClosestPoint(shape: number, origin: TVec)"
+    },
+    "IsShapeTouching": {
+        "prefix": "IsShapeTouching",
+        "body": [
+            "${0:IsShapeTouching(}${1:a}, ${2:b})"
+        ],
+        "description": "IsShapeTouching(a: number, b: number)"
+    },
+    "FindLocation": {
+        "prefix": "FindLocation",
+        "body": [
+            "${0:FindLocation(}${1:tag}, ${2:global})"
+        ],
+        "description": "FindLocation(tag: string, global: boolean)"
+    },
+    "FindLocations": {
+        "prefix": "FindLocations",
+        "body": [
+            "${0:FindLocations(}${1:tag}, ${2:global})"
+        ],
+        "description": "FindLocations(tag: string, global: boolean)"
+    },
+    "GetLocationTransform": {
+        "prefix": "GetLocationTransform",
+        "body": [
+            "${0:GetLocationTransform(}${1:handle})"
+        ],
+        "description": "GetLocationTransform(handle: number)"
+    },
+    "FindJoint": {
+        "prefix": "FindJoint",
+        "body": [
+            "${0:FindJoint(}${1:tag}, ${2:global})"
+        ],
+        "description": "FindJoint(tag: string, global: boolean)"
+    },
+    "FindJoints": {
+        "prefix": "FindJoints",
+        "body": [
+            "${0:FindJoints(}${1:tag}, ${2:global})"
+        ],
+        "description": "FindJoints(tag: string, global: boolean)"
+    },
+    "IsJointBroken": {
+        "prefix": "IsJointBroken",
+        "body": [
+            "${0:IsJointBroken(}${1:joint})"
+        ],
+        "description": "IsJointBroken(joint: number)"
+    },
+    "GetJointType": {
+        "prefix": "GetJointType",
+        "body": [
+            "${0:GetJointType(}${1:joint})"
+        ],
+        "description": "GetJointType(joint: number)"
+    },
+    "GetJointOtherShape": {
+        "prefix": "GetJointOtherShape",
+        "body": [
+            "${0:GetJointOtherShape(}${1:joint}, ${2:shape})"
+        ],
+        "description": "GetJointOtherShape(joint: number, shape: number)"
+    },
+    "GetJointShapes": {
+        "prefix": "GetJointShapes",
+        "body": [
+            "${0:GetJointShapes(}${1:joint})"
+        ],
+        "description": "GetJointShapes(joint: number)"
+    },
+    "SetJointMotor": {
+        "prefix": "SetJointMotor",
+        "body": [
+            "SetJointMotor(${1:joint}, ${2:velocity}, ${3:strength})"
+        ],
+        "description": "SetJointMotor(joint: number, velocity: number, strength: number)"
+    },
+    "SetJointMotorTarget": {
+        "prefix": "SetJointMotorTarget",
+        "body": [
+            "SetJointMotorTarget(${1:joint}, ${2:target}, ${3:maxVel}, ${4:strength})"
+        ],
+        "description": "SetJointMotorTarget(joint: number, target: number, maxVel: number, strength: number)"
+    },
+    "GetJointLimits": {
+        "prefix": "GetJointLimits",
+        "body": [
+            "${0:GetJointLimits(}${1:joint})"
+        ],
+        "description": "GetJointLimits(joint: number)"
+    },
+    "GetJointMovement": {
+        "prefix": "GetJointMovement",
+        "body": [
+            "${0:GetJointMovement(}${1:joint})"
+        ],
+        "description": "GetJointMovement(joint: number)"
+    },
+    "GetJointedBodies": {
+        "prefix": "GetJointedBodies",
+        "body": [
+            "${0:GetJointedBodies(}${1:body})"
+        ],
+        "description": "GetJointedBodies(body: number)"
+    },
+    "DetachJointFromShape": {
+        "prefix": "DetachJointFromShape",
+        "body": [
+            "DetachJointFromShape(${1:joint}, ${2:shape})"
+        ],
+        "description": "DetachJointFromShape(joint: number, shape: number)"
+    },
+    "GetRopeNumberOfPoints": {
+        "prefix": "GetRopeNumberOfPoints",
+        "body": [
+            "${0:GetRopeNumberOfPoints(}${1:joint})"
+        ],
+        "description": "GetRopeNumberOfPoints(joint: number)"
+    },
+    "GetRopePointPosition": {
+        "prefix": "GetRopePointPosition",
+        "body": [
+            "${0:GetRopePointPosition(}${1:joint}, ${2:index})"
+        ],
+        "description": "GetRopePointPosition(joint: number, index: number)"
+    },
+    "GetRopeBounds": {
+        "prefix": "GetRopeBounds",
+        "body": [
+            "${0:GetRopeBounds(}${1:joint})"
+        ],
+        "description": "GetRopeBounds(joint: number)"
+    },
+    "BreakRope": {
+        "prefix": "BreakRope",
+        "body": [
+            "BreakRope(${1:joint}, ${2:point})"
+        ],
+        "description": "BreakRope(joint: number, point: TVec)"
+    },
+    "SetAnimatorPositionIK": {
+        "prefix": "SetAnimatorPositionIK",
+        "body": [
+            "SetAnimatorPositionIK(${1:handle}, ${2:begname}, ${3:endname}, ${4:target}, ${5:weight}, ${6:history}, ${7:flag})"
+        ],
+        "description": "SetAnimatorPositionIK(handle: number, begname: string, endname: string, target: TVec, weight: number, history: number, flag: boolean)"
+    },
+    "SetAnimatorTransformIK": {
+        "prefix": "SetAnimatorTransformIK",
+        "body": [
+            "SetAnimatorTransformIK(${1:handle}, ${2:begname}, ${3:endname}, ${4:transform}, ${5:weight}, ${6:history}, ${7:locktarget}, ${8:useconstraints})"
+        ],
+        "description": "SetAnimatorTransformIK(handle: number, begname: string, endname: string, transform: TTransform, weight: number, history: number, locktarget: boolean, useconstraints: boolean)"
+    },
+    "GetBoneChainLength": {
+        "prefix": "GetBoneChainLength",
+        "body": [
+            "${0:GetBoneChainLength(}${1:handle}, ${2:begname}, ${3:endname})"
+        ],
+        "description": "GetBoneChainLength(handle: number, begname: string, endname: string)"
+    },
+    "FindAnimator": {
+        "prefix": "FindAnimator",
+        "body": [
+            "${0:FindAnimator(}${1:tag}, ${2:global})"
+        ],
+        "description": "FindAnimator(tag: string, global: boolean)"
+    },
+    "FindAnimators": {
+        "prefix": "FindAnimators",
+        "body": [
+            "${0:FindAnimators(}${1:tag}, ${2:global})"
+        ],
+        "description": "FindAnimators(tag: string, global: boolean)"
+    },
+    "GetAnimatorTransform": {
+        "prefix": "GetAnimatorTransform",
+        "body": [
+            "${0:GetAnimatorTransform(}${1:handle})"
+        ],
+        "description": "GetAnimatorTransform(handle: number)"
+    },
+    "GetAnimatorAdjustTransformIK": {
+        "prefix": "GetAnimatorAdjustTransformIK",
+        "body": [
+            "${0:GetAnimatorAdjustTransformIK(}${1:handle}, ${2:name})"
+        ],
+        "description": "GetAnimatorAdjustTransformIK(handle: number, name: string)"
+    },
+    "SetAnimatorTransform": {
+        "prefix": "SetAnimatorTransform",
+        "body": [
+            "SetAnimatorTransform(${1:handle}, ${2:transform})"
+        ],
+        "description": "SetAnimatorTransform(handle: number, transform: TTransform)"
+    },
+    "MakeRagdoll": {
+        "prefix": "MakeRagdoll",
+        "body": [
+            "MakeRagdoll(${1:handle})"
+        ],
+        "description": "MakeRagdoll(handle: number)"
+    },
+    "UnRagdoll": {
+        "prefix": "UnRagdoll",
+        "body": [
+            "UnRagdoll(${1:handle}, ${2:time})"
+        ],
+        "description": "UnRagdoll(handle: number, time: number)"
+    },
+    "PlayAnimation": {
+        "prefix": "PlayAnimation",
+        "body": [
+            "${0:PlayAnimation(}${1:handle}, ${2:name}, ${3:weight}, ${4:filter})"
+        ],
+        "description": "PlayAnimation(handle: number, name: string, weight: number, filter: string)"
+    },
+    "PlayAnimationLoop": {
+        "prefix": "PlayAnimationLoop",
+        "body": [
+            "PlayAnimationLoop(${1:handle}, ${2:name}, ${3:weight}, ${4:filter})"
+        ],
+        "description": "PlayAnimationLoop(handle: number, name: string, weight: number, filter: string)"
+    },
+    "PlayAnimationInstance": {
+        "prefix": "PlayAnimationInstance",
+        "body": [
+            "${0:PlayAnimationInstance(}${1:handle}, ${2:instance}, ${3:weight}, ${4:speed})"
+        ],
+        "description": "PlayAnimationInstance(handle: number, instance: number, weight: number, speed: number)"
+    },
+    "StopAnimationInstance": {
+        "prefix": "StopAnimationInstance",
+        "body": [
+            "StopAnimationInstance(${1:handle}, ${2:instance})"
+        ],
+        "description": "StopAnimationInstance(handle: number, instance: number)"
+    },
+    "PlayAnimationFrame": {
+        "prefix": "PlayAnimationFrame",
+        "body": [
+            "PlayAnimationFrame(${1:handle}, ${2:name}, ${3:time}, ${4:weight}, ${5:filter})"
+        ],
+        "description": "PlayAnimationFrame(handle: number, name: , time: , weight: number, filter: string)"
+    },
+    "BeginAnimationGroup": {
+        "prefix": "BeginAnimationGroup",
+        "body": [
+            "BeginAnimationGroup(${1:handle}, ${2:weight}, ${3:filter})"
+        ],
+        "description": "BeginAnimationGroup(handle: number, weight: number, filter: string)"
+    },
+    "EndAnimationGroup": {
+        "prefix": "EndAnimationGroup",
+        "body": [
+            "EndAnimationGroup(${1:handle})"
+        ],
+        "description": "EndAnimationGroup(handle: number)"
+    },
+    "PlayAnimationInstances": {
+        "prefix": "PlayAnimationInstances",
+        "body": [
+            "PlayAnimationInstances(${1:handle})"
+        ],
+        "description": "PlayAnimationInstances(handle: number)"
+    },
+    "GetAnimationClipNames": {
+        "prefix": "GetAnimationClipNames",
+        "body": [
+            "${0:GetAnimationClipNames(}${1:handle})"
+        ],
+        "description": "GetAnimationClipNames(handle: number)"
+    },
+    "GetAnimationClipDuration": {
+        "prefix": "GetAnimationClipDuration",
+        "body": [
+            "${0:GetAnimationClipDuration(}${1:handle}, ${2:name})"
+        ],
+        "description": "GetAnimationClipDuration(handle: number, name: )"
+    },
+    "SetAnimationClipFade": {
+        "prefix": "SetAnimationClipFade",
+        "body": [
+            "SetAnimationClipFade(${1:handle}, ${2:name}, ${3:fadein}, ${4:fadeout})"
+        ],
+        "description": "SetAnimationClipFade(handle: , name: , fadein: , fadeout: number)"
+    },
+    "SetAnimationClipSpeed": {
+        "prefix": "SetAnimationClipSpeed",
+        "body": [
+            "SetAnimationClipSpeed(${1:handle}, ${2:name}, ${3:speed})"
+        ],
+        "description": "SetAnimationClipSpeed(handle: number, name: , speed: )"
+    },
+    "TrimAnimationClip": {
+        "prefix": "TrimAnimationClip",
+        "body": [
+            "TrimAnimationClip(${1:handle}, ${2:name}, ${3:begoffset}, ${4:endoffset})"
+        ],
+        "description": "TrimAnimationClip(handle: , name: , begoffset: number, endoffset: number)"
+    },
+    "GetAnimationClipLoopPosition": {
+        "prefix": "GetAnimationClipLoopPosition",
+        "body": [
+            "${0:GetAnimationClipLoopPosition(}${1:handle}, ${2:name})"
+        ],
+        "description": "GetAnimationClipLoopPosition(handle: number, name: )"
+    },
+    "GetAnimationInstancePosition": {
+        "prefix": "GetAnimationInstancePosition",
+        "body": [
+            "${0:GetAnimationInstancePosition(}${1:handle}, ${2:instance})"
+        ],
+        "description": "GetAnimationInstancePosition(handle: number, instance: number)"
+    },
+    "SetAnimationClipLoopPosition": {
+        "prefix": "SetAnimationClipLoopPosition",
+        "body": [
+            "SetAnimationClipLoopPosition(${1:handle}, ${2:name}, ${3:time})"
+        ],
+        "description": "SetAnimationClipLoopPosition(handle: number, name: , time: )"
+    },
+    "SetBoneRotation": {
+        "prefix": "SetBoneRotation",
+        "body": [
+            "SetBoneRotation(${1:handle}, ${2:name}, ${3:quat}, ${4:weight})"
+        ],
+        "description": "SetBoneRotation(handle: number, name: , quat: , weight: number)"
+    },
+    "SetBoneLookAt": {
+        "prefix": "SetBoneLookAt",
+        "body": [
+            "SetBoneLookAt(${1:handle}, ${2:name}, ${3:point}, ${4:weight})"
+        ],
+        "description": "SetBoneLookAt(handle: number, name: , point: , weight: number)"
+    },
+    "RotateBone": {
+        "prefix": "RotateBone",
+        "body": [
+            "RotateBone(${1:handle}, ${2:name}, ${3:quat}, ${4:weight})"
+        ],
+        "description": "RotateBone(handle: number, name: , quat: , weight: number)"
+    },
+    "GetBoneNames": {
+        "prefix": "GetBoneNames",
+        "body": [
+            "${0:GetBoneNames(}${1:handle})"
+        ],
+        "description": "GetBoneNames(handle: number)"
+    },
+    "GetBoneBody": {
+        "prefix": "GetBoneBody",
+        "body": [
+            "${0:GetBoneBody(}${1:handle}, ${2:name})"
+        ],
+        "description": "GetBoneBody(handle: number, name: string)"
+    },
+    "GetBoneWorldTransform": {
+        "prefix": "GetBoneWorldTransform",
+        "body": [
+            "${0:GetBoneWorldTransform(}${1:handle}, ${2:name})"
+        ],
+        "description": "GetBoneWorldTransform(handle: number, name: string)"
+    },
+    "GetBoneBindPoseTransform": {
+        "prefix": "GetBoneBindPoseTransform",
+        "body": [
+            "${0:GetBoneBindPoseTransform(}${1:handle}, ${2:name})"
+        ],
+        "description": "GetBoneBindPoseTransform(handle: number, name: string)"
+    },
+    "FindLight": {
+        "prefix": "FindLight",
+        "body": [
+            "${0:FindLight(}${1:tag}, ${2:global})"
+        ],
+        "description": "FindLight(tag: string, global: boolean)"
+    },
+    "FindLights": {
+        "prefix": "FindLights",
+        "body": [
+            "${0:FindLights(}${1:tag}, ${2:global})"
+        ],
+        "description": "FindLights(tag: string, global: boolean)"
+    },
+    "SetLightEnabled": {
+        "prefix": "SetLightEnabled",
+        "body": [
+            "SetLightEnabled(${1:handle}, ${2:enabled})"
+        ],
+        "description": "SetLightEnabled(handle: number, enabled: boolean)"
+    },
+    "SetLightColor": {
+        "prefix": "SetLightColor",
+        "body": [
+            "SetLightColor(${1:handle}, ${2:r}, ${3:g}, ${4:b})"
+        ],
+        "description": "SetLightColor(handle: number, r: number, g: number, b: number)"
+    },
+    "SetLightIntensity": {
+        "prefix": "SetLightIntensity",
+        "body": [
+            "SetLightIntensity(${1:handle}, ${2:intensity})"
+        ],
+        "description": "SetLightIntensity(handle: number, intensity: number)"
+    },
+    "GetLightTransform": {
+        "prefix": "GetLightTransform",
+        "body": [
+            "${0:GetLightTransform(}${1:handle})"
+        ],
+        "description": "GetLightTransform(handle: number)"
+    },
+    "GetLightShape": {
+        "prefix": "GetLightShape",
+        "body": [
+            "${0:GetLightShape(}${1:handle})"
+        ],
+        "description": "GetLightShape(handle: number)"
+    },
+    "IsLightActive": {
+        "prefix": "IsLightActive",
+        "body": [
+            "${0:IsLightActive(}${1:handle})"
+        ],
+        "description": "IsLightActive(handle: number)"
+    },
+    "IsPointAffectedByLight": {
+        "prefix": "IsPointAffectedByLight",
+        "body": [
+            "${0:IsPointAffectedByLight(}${1:handle}, ${2:point})"
+        ],
+        "description": "IsPointAffectedByLight(handle: number, point: TVec)"
+    },
+    "GetFlashlight": {
+        "prefix": "GetFlashlight",
+        "body": [
+            "${0:GetFlashlight(}})"
+        ],
+        "description": "GetFlashlight()"
+    },
+    "SetFlashlight": {
+        "prefix": "SetFlashlight",
+        "body": [
+            "SetFlashlight(${1:handle})"
+        ],
+        "description": "SetFlashlight(handle: number)"
+    },
+    "FindTrigger": {
+        "prefix": "FindTrigger",
+        "body": [
+            "${0:FindTrigger(}${1:tag}, ${2:global})"
+        ],
+        "description": "FindTrigger(tag: string, global: boolean)"
+    },
+    "FindTriggers": {
+        "prefix": "FindTriggers",
+        "body": [
+            "${0:FindTriggers(}${1:tag}, ${2:global})"
+        ],
+        "description": "FindTriggers(tag: string, global: boolean)"
+    },
+    "GetTriggerTransform": {
+        "prefix": "GetTriggerTransform",
+        "body": [
+            "${0:GetTriggerTransform(}${1:handle})"
+        ],
+        "description": "GetTriggerTransform(handle: number)"
+    },
+    "SetTriggerTransform": {
+        "prefix": "SetTriggerTransform",
+        "body": [
+            "SetTriggerTransform(${1:handle}, ${2:transform})"
+        ],
+        "description": "SetTriggerTransform(handle: number, transform: TTransform)"
+    },
+    "GetTriggerBounds": {
+        "prefix": "GetTriggerBounds",
+        "body": [
+            "${0:GetTriggerBounds(}${1:handle})"
+        ],
+        "description": "GetTriggerBounds(handle: number)"
+    },
+    "IsBodyInTrigger": {
+        "prefix": "IsBodyInTrigger",
+        "body": [
+            "${0:IsBodyInTrigger(}${1:trigger}, ${2:body})"
+        ],
+        "description": "IsBodyInTrigger(trigger: number, body: number)"
+    },
+    "IsVehicleInTrigger": {
+        "prefix": "IsVehicleInTrigger",
+        "body": [
+            "${0:IsVehicleInTrigger(}${1:trigger}, ${2:vehicle})"
+        ],
+        "description": "IsVehicleInTrigger(trigger: number, vehicle: number)"
+    },
+    "IsShapeInTrigger": {
+        "prefix": "IsShapeInTrigger",
+        "body": [
+            "${0:IsShapeInTrigger(}${1:trigger}, ${2:shape})"
+        ],
+        "description": "IsShapeInTrigger(trigger: number, shape: number)"
+    },
+    "IsPointInTrigger": {
+        "prefix": "IsPointInTrigger",
+        "body": [
+            "${0:IsPointInTrigger(}${1:trigger}, ${2:point})"
+        ],
+        "description": "IsPointInTrigger(trigger: number, point: TVec)"
+    },
+    "IsPointInBoundaries": {
+        "prefix": "IsPointInBoundaries",
+        "body": [
+            "${0:IsPointInBoundaries(}${1:point})"
+        ],
+        "description": "IsPointInBoundaries(point: TVec)"
+    },
+    "IsTriggerEmpty": {
+        "prefix": "IsTriggerEmpty",
+        "body": [
+            "${0:IsTriggerEmpty(}${1:handle}, ${2:demolision})"
+        ],
+        "description": "IsTriggerEmpty(handle: number, demolision: boolean)"
+    },
+    "GetTriggerDistance": {
+        "prefix": "GetTriggerDistance",
+        "body": [
+            "${0:GetTriggerDistance(}${1:trigger}, ${2:point})"
+        ],
+        "description": "GetTriggerDistance(trigger: number, point: TVec)"
+    },
+    "GetTriggerClosestPoint": {
+        "prefix": "GetTriggerClosestPoint",
+        "body": [
+            "${0:GetTriggerClosestPoint(}${1:trigger}, ${2:point})"
+        ],
+        "description": "GetTriggerClosestPoint(trigger: number, point: TVec)"
+    },
+    "FindScreen": {
+        "prefix": "FindScreen",
+        "body": [
+            "${0:FindScreen(}${1:tag}, ${2:global})"
+        ],
+        "description": "FindScreen(tag: string, global: boolean)"
+    },
+    "FindScreens": {
+        "prefix": "FindScreens",
+        "body": [
+            "${0:FindScreens(}${1:tag}, ${2:global})"
+        ],
+        "description": "FindScreens(tag: string, global: boolean)"
+    },
+    "SetScreenEnabled": {
+        "prefix": "SetScreenEnabled",
+        "body": [
+            "SetScreenEnabled(${1:screen}, ${2:enabled})"
+        ],
+        "description": "SetScreenEnabled(screen: number, enabled: boolean)"
+    },
+    "IsScreenEnabled": {
+        "prefix": "IsScreenEnabled",
+        "body": [
+            "${0:IsScreenEnabled(}${1:screen})"
+        ],
+        "description": "IsScreenEnabled(screen: number)"
+    },
+    "GetScreenShape": {
+        "prefix": "GetScreenShape",
+        "body": [
+            "${0:GetScreenShape(}${1:screen})"
+        ],
+        "description": "GetScreenShape(screen: number)"
+    },
+    "FindVehicle": {
+        "prefix": "FindVehicle",
+        "body": [
+            "${0:FindVehicle(}${1:tag}, ${2:global})"
+        ],
+        "description": "FindVehicle(tag: string, global: boolean)"
+    },
+    "FindVehicles": {
+        "prefix": "FindVehicles",
+        "body": [
+            "${0:FindVehicles(}${1:tag}, ${2:global})"
+        ],
+        "description": "FindVehicles(tag: string, global: boolean)"
+    },
+    "GetVehicleTransform": {
+        "prefix": "GetVehicleTransform",
+        "body": [
+            "${0:GetVehicleTransform(}${1:vehicle})"
+        ],
+        "description": "GetVehicleTransform(vehicle: number)"
+    },
+    "GetVehicleExhaustTransforms": {
+        "prefix": "GetVehicleExhaustTransforms",
+        "body": [
+            "${0:GetVehicleExhaustTransforms(}${1:vehicle})"
+        ],
+        "description": "GetVehicleExhaustTransforms(vehicle: number)"
+    },
+    "GetVehicleVitalTransforms": {
+        "prefix": "GetVehicleVitalTransforms",
+        "body": [
+            "${0:GetVehicleVitalTransforms(}${1:vehicle})"
+        ],
+        "description": "GetVehicleVitalTransforms(vehicle: number)"
+    },
+    "GetVehicleBodies": {
+        "prefix": "GetVehicleBodies",
+        "body": [
+            "${0:GetVehicleBodies(}${1:vehicle})"
+        ],
+        "description": "GetVehicleBodies(vehicle: number)"
+    },
+    "GetVehicleBody": {
+        "prefix": "GetVehicleBody",
+        "body": [
+            "${0:GetVehicleBody(}${1:vehicle})"
+        ],
+        "description": "GetVehicleBody(vehicle: number)"
+    },
+    "GetVehicleHealth": {
+        "prefix": "GetVehicleHealth",
+        "body": [
+            "${0:GetVehicleHealth(}${1:vehicle})"
+        ],
+        "description": "GetVehicleHealth(vehicle: number)"
+    },
+    "GetVehicleParams": {
+        "prefix": "GetVehicleParams",
+        "body": [
+            "${0:GetVehicleParams(}${1:vehicle})"
+        ],
+        "description": "GetVehicleParams(vehicle: number)"
+    },
+    "SetVehicleParam": {
+        "prefix": "SetVehicleParam",
+        "body": [
+            "SetVehicleParam(${1:handle}, ${2:param}, ${3:value})"
+        ],
+        "description": "SetVehicleParam(handle: number, param: string, value: number)"
+    },
+    "GetVehicleDriverPos": {
+        "prefix": "GetVehicleDriverPos",
+        "body": [
+            "${0:GetVehicleDriverPos(}${1:vehicle})"
+        ],
+        "description": "GetVehicleDriverPos(vehicle: number)"
+    },
+    "GetVehicleSteering": {
+        "prefix": "GetVehicleSteering",
+        "body": [
+            "${0:GetVehicleSteering(}${1:vehicle})"
+        ],
+        "description": "GetVehicleSteering(vehicle: number)"
+    },
+    "GetVehicleDrive": {
+        "prefix": "GetVehicleDrive",
+        "body": [
+            "${0:GetVehicleDrive(}${1:vehicle})"
+        ],
+        "description": "GetVehicleDrive(vehicle: number)"
+    },
+    "DriveVehicle": {
+        "prefix": "DriveVehicle",
+        "body": [
+            "DriveVehicle(${1:vehicle}, ${2:drive}, ${3:steering}, ${4:handbrake})"
+        ],
+        "description": "DriveVehicle(vehicle: number, drive: number, steering: number, handbrake: boolean)"
+    },
+    "GetPlayerPos": {
+        "prefix": "GetPlayerPos",
+        "body": [
+            "${0:GetPlayerPos(}})"
+        ],
+        "description": "GetPlayerPos()"
+    },
+    "GetPlayerAimInfo": {
+        "prefix": "GetPlayerAimInfo",
+        "body": [
+            "${0:GetPlayerAimInfo(}${1:position}, ${2:maxdist})"
+        ],
+        "description": "GetPlayerAimInfo(position: TVec, maxdist: number)"
+    },
+    "GetPlayerPitch": {
+        "prefix": "GetPlayerPitch",
+        "body": [
+            "${0:GetPlayerPitch(}})"
+        ],
+        "description": "GetPlayerPitch()"
+    },
+    "GetPlayerCrouch": {
+        "prefix": "GetPlayerCrouch",
+        "body": [
+            "${0:GetPlayerCrouch(}})"
+        ],
+        "description": "GetPlayerCrouch()"
+    },
+    "GetPlayerTransform": {
+        "prefix": "GetPlayerTransform",
+        "body": [
+            "${0:GetPlayerTransform(}${1:includePitch})"
+        ],
+        "description": "GetPlayerTransform(includePitch: boolean)"
+    },
+    "SetPlayerTransform": {
+        "prefix": "SetPlayerTransform",
+        "body": [
+            "SetPlayerTransform(${1:transform}, ${2:includePitch})"
+        ],
+        "description": "SetPlayerTransform(transform: TTransform, includePitch: boolean)"
+    },
+    "ClearPlayerRig": {
+        "prefix": "ClearPlayerRig",
+        "body": [
+            "ClearPlayerRig(${1:rig-id})"
+        ],
+        "description": "ClearPlayerRig(rig-id: number)"
+    },
+    "SetPlayerRigLocationLocalTransform": {
+        "prefix": "SetPlayerRigLocationLocalTransform",
+        "body": [
+            "SetPlayerRigLocationLocalTransform(${1:rig-id}, ${2:name}, ${3:location})"
+        ],
+        "description": "SetPlayerRigLocationLocalTransform(rig-id: number, name: string, location: table)"
+    },
+    "SetPlayerRigTransform": {
+        "prefix": "SetPlayerRigTransform",
+        "body": [
+            "SetPlayerRigTransform(${1:rig-id}, ${2:location})"
+        ],
+        "description": "SetPlayerRigTransform(rig-id: number, location: table)"
+    },
+    "GetPlayerRigTransform": {
+        "prefix": "GetPlayerRigTransform",
+        "body": [
+            "${0:GetPlayerRigTransform(}})"
+        ],
+        "description": "GetPlayerRigTransform()"
+    },
+    "GetPlayerRigLocationWorldTransform": {
+        "prefix": "GetPlayerRigLocationWorldTransform",
+        "body": [
+            "${0:GetPlayerRigLocationWorldTransform(}${1:name})"
+        ],
+        "description": "GetPlayerRigLocationWorldTransform(name: string)"
+    },
+    "SetPlayerRigTags": {
+        "prefix": "SetPlayerRigTags",
+        "body": [
+            "SetPlayerRigTags(${1:tag}, ${2:value})"
+        ],
+        "description": "SetPlayerRigTags(tag: string, value: string)"
+    },
+    "GetPlayerRigHasTag": {
+        "prefix": "GetPlayerRigHasTag",
+        "body": [
+            "${0:GetPlayerRigHasTag(}${1:tag})"
+        ],
+        "description": "GetPlayerRigHasTag(tag: string)"
+    },
+    "GetPlayerRigTagValue": {
+        "prefix": "GetPlayerRigTagValue",
+        "body": [
+            "${0:GetPlayerRigTagValue(}${1:tag})"
+        ],
+        "description": "GetPlayerRigTagValue(tag: string)"
+    },
+    "SetPlayerGroundVelocity": {
+        "prefix": "SetPlayerGroundVelocity",
+        "body": [
+            "SetPlayerGroundVelocity(${1:vel})"
+        ],
+        "description": "SetPlayerGroundVelocity(vel: TVec)"
+    },
+    "GetPlayerEyeTransform": {
+        "prefix": "GetPlayerEyeTransform",
+        "body": [
+            "${0:GetPlayerEyeTransform(}})"
+        ],
+        "description": "GetPlayerEyeTransform()"
+    },
+    "GetPlayerCameraTransform": {
+        "prefix": "GetPlayerCameraTransform",
+        "body": [
+            "${0:GetPlayerCameraTransform(}})"
+        ],
+        "description": "GetPlayerCameraTransform()"
+    },
+    "SetPlayerCameraOffsetTransform": {
+        "prefix": "SetPlayerCameraOffsetTransform",
+        "body": [
+            "SetPlayerCameraOffsetTransform(${1:transform}, ${2:stackable})"
+        ],
+        "description": "SetPlayerCameraOffsetTransform(transform: TTransform, stackable: boolean)"
+    },
+    "SetPlayerSpawnTransform": {
+        "prefix": "SetPlayerSpawnTransform",
+        "body": [
+            "SetPlayerSpawnTransform(${1:transform})"
+        ],
+        "description": "SetPlayerSpawnTransform(transform: TTransform)"
+    },
+    "SetPlayerSpawnHealth": {
+        "prefix": "SetPlayerSpawnHealth",
+        "body": [
+            "SetPlayerSpawnHealth(${1:health})"
+        ],
+        "description": "SetPlayerSpawnHealth(health: number)"
+    },
+    "SetPlayerSpawnTool": {
+        "prefix": "SetPlayerSpawnTool",
+        "body": [
+            "SetPlayerSpawnTool(${1:id})"
+        ],
+        "description": "SetPlayerSpawnTool(id: string)"
+    },
+    "GetPlayerVelocity": {
+        "prefix": "GetPlayerVelocity",
+        "body": [
+            "${0:GetPlayerVelocity(}})"
+        ],
+        "description": "GetPlayerVelocity()"
+    },
+    "SetPlayerVehicle": {
+        "prefix": "SetPlayerVehicle",
+        "body": [
+            "SetPlayerVehicle(${1:vehicle})"
+        ],
+        "description": "SetPlayerVehicle(vehicle: number)"
+    },
+    "SetPlayerAnimator": {
+        "prefix": "SetPlayerAnimator",
+        "body": [
+            "SetPlayerAnimator(${1:animator})"
+        ],
+        "description": "SetPlayerAnimator(animator: number)"
+    },
+    "GetPlayerAnimator": {
+        "prefix": "GetPlayerAnimator",
+        "body": [
+            "${0:GetPlayerAnimator(}})"
+        ],
+        "description": "GetPlayerAnimator()"
+    },
+    "SetPlayerVelocity": {
+        "prefix": "SetPlayerVelocity",
+        "body": [
+            "SetPlayerVelocity(${1:velocity})"
+        ],
+        "description": "SetPlayerVelocity(velocity: TVec)"
+    },
+    "GetPlayerVehicle": {
+        "prefix": "GetPlayerVehicle",
+        "body": [
+            "${0:GetPlayerVehicle(}})"
+        ],
+        "description": "GetPlayerVehicle()"
+    },
+    "IsPlayerGrounded": {
+        "prefix": "IsPlayerGrounded",
+        "body": [
+            "${0:IsPlayerGrounded(}})"
+        ],
+        "description": "IsPlayerGrounded()"
+    },
+    "GetPlayerGrabShape": {
+        "prefix": "GetPlayerGrabShape",
+        "body": [
+            "${0:GetPlayerGrabShape(}})"
+        ],
+        "description": "GetPlayerGrabShape()"
+    },
+    "GetPlayerGrabBody": {
+        "prefix": "GetPlayerGrabBody",
+        "body": [
+            "${0:GetPlayerGrabBody(}})"
+        ],
+        "description": "GetPlayerGrabBody()"
+    },
+    "ReleasePlayerGrab": {
+        "prefix": "ReleasePlayerGrab",
+        "body": [
+            "ReleasePlayerGrab()"
+        ],
+        "description": "ReleasePlayerGrab()"
+    },
+    "GetPlayerGrabPoint": {
+        "prefix": "GetPlayerGrabPoint",
+        "body": [
+            "${0:GetPlayerGrabPoint(}})"
+        ],
+        "description": "GetPlayerGrabPoint()"
+    },
+    "GetPlayerPickShape": {
+        "prefix": "GetPlayerPickShape",
+        "body": [
+            "${0:GetPlayerPickShape(}})"
+        ],
+        "description": "GetPlayerPickShape()"
+    },
+    "GetPlayerPickBody": {
+        "prefix": "GetPlayerPickBody",
+        "body": [
+            "${0:GetPlayerPickBody(}})"
+        ],
+        "description": "GetPlayerPickBody()"
+    },
+    "GetPlayerInteractShape": {
+        "prefix": "GetPlayerInteractShape",
+        "body": [
+            "${0:GetPlayerInteractShape(}})"
+        ],
+        "description": "GetPlayerInteractShape()"
+    },
+    "GetPlayerInteractBody": {
+        "prefix": "GetPlayerInteractBody",
+        "body": [
+            "${0:GetPlayerInteractBody(}})"
+        ],
+        "description": "GetPlayerInteractBody()"
+    },
+    "SetPlayerScreen": {
+        "prefix": "SetPlayerScreen",
+        "body": [
+            "SetPlayerScreen(${1:handle})"
+        ],
+        "description": "SetPlayerScreen(handle: number)"
+    },
+    "GetPlayerScreen": {
+        "prefix": "GetPlayerScreen",
+        "body": [
+            "${0:GetPlayerScreen(}})"
+        ],
+        "description": "GetPlayerScreen()"
+    },
+    "SetPlayerHealth": {
+        "prefix": "SetPlayerHealth",
+        "body": [
+            "SetPlayerHealth(${1:health})"
+        ],
+        "description": "SetPlayerHealth(health: number)"
+    },
+    "GetPlayerHealth": {
+        "prefix": "GetPlayerHealth",
+        "body": [
+            "${0:GetPlayerHealth(}})"
+        ],
+        "description": "GetPlayerHealth()"
+    },
+    "SetPlayerRegenerationState": {
+        "prefix": "SetPlayerRegenerationState",
+        "body": [
+            "SetPlayerRegenerationState(${1:state})"
+        ],
+        "description": "SetPlayerRegenerationState(state: boolean)"
+    },
+    "RespawnPlayer": {
+        "prefix": "RespawnPlayer",
+        "body": [
+            "RespawnPlayer()"
+        ],
+        "description": "RespawnPlayer()"
+    },
+    "GetPlayerWalkingSpeed": {
+        "prefix": "GetPlayerWalkingSpeed",
+        "body": [
+            "${0:GetPlayerWalkingSpeed(}})"
+        ],
+        "description": "GetPlayerWalkingSpeed()"
+    },
+    "SetPlayerWalkingSpeed": {
+        "prefix": "SetPlayerWalkingSpeed",
+        "body": [
+            "SetPlayerWalkingSpeed(${1:speed})"
+        ],
+        "description": "SetPlayerWalkingSpeed(speed: number)"
+    },
+    "GetPlayerParam": {
+        "prefix": "GetPlayerParam",
+        "body": [
+            "${0:GetPlayerParam(}${1:parameter})"
+        ],
+        "description": "GetPlayerParam(parameter: string)"
+    },
+    "SetPlayerParam": {
+        "prefix": "SetPlayerParam",
+        "body": [
+            "SetPlayerParam(${1:parameter}, ${2:value})"
+        ],
+        "description": "SetPlayerParam(parameter: string, value: any)"
+    },
+    "SetPlayerHidden": {
+        "prefix": "SetPlayerHidden",
+        "body": [
+            "SetPlayerHidden()"
+        ],
+        "description": "SetPlayerHidden()"
+    },
+    "RegisterTool": {
+        "prefix": "RegisterTool",
+        "body": [
+            "RegisterTool(${1:id}, ${2:name}, ${3:file}, ${4:group})"
+        ],
+        "description": "RegisterTool(id: string, name: string, file: string, group: number)"
+    },
+    "GetToolBody": {
+        "prefix": "GetToolBody",
+        "body": [
+            "${0:GetToolBody(}})"
+        ],
+        "description": "GetToolBody()"
+    },
+    "GetToolHandPoseLocalTransform": {
+        "prefix": "GetToolHandPoseLocalTransform",
+        "body": [
+            "${0:GetToolHandPoseLocalTransform(}})"
+        ],
+        "description": "GetToolHandPoseLocalTransform()"
+    },
+    "GetToolHandPoseWorldTransform": {
+        "prefix": "GetToolHandPoseWorldTransform",
+        "body": [
+            "${0:GetToolHandPoseWorldTransform(}})"
+        ],
+        "description": "GetToolHandPoseWorldTransform()"
+    },
+    "SetToolHandPoseLocalTransform": {
+        "prefix": "SetToolHandPoseLocalTransform",
+        "body": [
+            "SetToolHandPoseLocalTransform(${1:right}, ${2:left})"
+        ],
+        "description": "SetToolHandPoseLocalTransform(right: TTransform, left: TTransform)"
+    },
+    "GetToolLocationLocalTransform": {
+        "prefix": "GetToolLocationLocalTransform",
+        "body": [
+            "${0:GetToolLocationLocalTransform(}${1:name})"
+        ],
+        "description": "GetToolLocationLocalTransform(name: string)"
+    },
+    "GetToolLocationWorldTransform": {
+        "prefix": "GetToolLocationWorldTransform",
+        "body": [
+            "${0:GetToolLocationWorldTransform(}${1:name})"
+        ],
+        "description": "GetToolLocationWorldTransform(name: string)"
+    },
+    "SetToolTransform": {
+        "prefix": "SetToolTransform",
+        "body": [
+            "SetToolTransform(${1:transform}, ${2:sway})"
+        ],
+        "description": "SetToolTransform(transform: TTransform, sway: number)"
+    },
+    "SetToolTransformOverride": {
+        "prefix": "SetToolTransformOverride",
+        "body": [
+            "SetToolTransformOverride(${1:transform})"
+        ],
+        "description": "SetToolTransformOverride(transform: TTransform)"
+    },
+    "SetToolOffset": {
+        "prefix": "SetToolOffset",
+        "body": [
+            "SetToolOffset(${1:offset})"
+        ],
+        "description": "SetToolOffset(offset: TVec)"
+    },
+    "LoadSound": {
+        "prefix": "LoadSound",
+        "body": [
+            "${0:LoadSound(}${1:path}, ${2:nominalDistance})"
+        ],
+        "description": "LoadSound(path: string, nominalDistance: number)"
+    },
+    "UnloadSound": {
+        "prefix": "UnloadSound",
+        "body": [
+            "UnloadSound(${1:handle})"
+        ],
+        "description": "UnloadSound(handle: number)"
+    },
+    "LoadLoop": {
+        "prefix": "LoadLoop",
+        "body": [
+            "${0:LoadLoop(}${1:path}, ${2:nominalDistance})"
+        ],
+        "description": "LoadLoop(path: string, nominalDistance: number)"
+    },
+    "UnloadLoop": {
+        "prefix": "UnloadLoop",
+        "body": [
+            "UnloadLoop(${1:handle})"
+        ],
+        "description": "UnloadLoop(handle: number)"
+    },
+    "SetSoundLoopUser": {
+        "prefix": "SetSoundLoopUser",
+        "body": [
+            "${0:SetSoundLoopUser(}${1:handle}, ${2:nominalDistance})"
+        ],
+        "description": "SetSoundLoopUser(handle: number, nominalDistance: number)"
+    },
+    "PlaySound": {
+        "prefix": "PlaySound",
+        "body": [
+            "${0:PlaySound(}${1:handle}, ${2:pos}, ${3:volume}, ${4:registerVolume}, ${5:pitch})"
+        ],
+        "description": "PlaySound(handle: number, pos: TVec, volume: number, registerVolume: boolean, pitch: number)"
+    },
+    "PlaySoundForUser": {
+        "prefix": "PlaySoundForUser",
+        "body": [
+            "${0:PlaySoundForUser(}${1:handle}, ${2:user}, ${3:pos}, ${4:volume}, ${5:registerVolume}, ${6:pitch})"
+        ],
+        "description": "PlaySoundForUser(handle: number, user: number, pos: TVec, volume: number, registerVolume: boolean, pitch: number)"
+    },
+    "StopSound": {
+        "prefix": "StopSound",
+        "body": [
+            "StopSound(${1:handle})"
+        ],
+        "description": "StopSound(handle: number)"
+    },
+    "IsSoundPlaying": {
+        "prefix": "IsSoundPlaying",
+        "body": [
+            "${0:IsSoundPlaying(}${1:handle})"
+        ],
+        "description": "IsSoundPlaying(handle: number)"
+    },
+    "GetSoundProgress": {
+        "prefix": "GetSoundProgress",
+        "body": [
+            "${0:GetSoundProgress(}${1:handle})"
+        ],
+        "description": "GetSoundProgress(handle: number)"
+    },
+    "SetSoundProgress": {
+        "prefix": "SetSoundProgress",
+        "body": [
+            "SetSoundProgress(${1:handle}, ${2:progress})"
+        ],
+        "description": "SetSoundProgress(handle: number, progress: number)"
+    },
+    "PlayLoop": {
+        "prefix": "PlayLoop",
+        "body": [
+            "PlayLoop(${1:handle}, ${2:pos}, ${3:volume}, ${4:registerVolume}, ${5:pitch})"
+        ],
+        "description": "PlayLoop(handle: number, pos: TVec, volume: number, registerVolume: boolean, pitch: number)"
+    },
+    "GetSoundLoopProgress": {
+        "prefix": "GetSoundLoopProgress",
+        "body": [
+            "${0:GetSoundLoopProgress(}${1:handle})"
+        ],
+        "description": "GetSoundLoopProgress(handle: number)"
+    },
+    "SetSoundLoopProgress": {
+        "prefix": "SetSoundLoopProgress",
+        "body": [
+            "SetSoundLoopProgress(${1:handle}, ${2:progress})"
+        ],
+        "description": "SetSoundLoopProgress(handle: number, progress: number)"
+    },
+    "PlayMusic": {
+        "prefix": "PlayMusic",
+        "body": [
+            "PlayMusic(${1:path})"
+        ],
+        "description": "PlayMusic(path: string)"
+    },
+    "StopMusic": {
+        "prefix": "StopMusic",
+        "body": [
+            "StopMusic()"
+        ],
+        "description": "StopMusic()"
+    },
+    "IsMusicPlaying": {
+        "prefix": "IsMusicPlaying",
+        "body": [
+            "${0:IsMusicPlaying(}})"
+        ],
+        "description": "IsMusicPlaying()"
+    },
+    "SetMusicPaused": {
+        "prefix": "SetMusicPaused",
+        "body": [
+            "SetMusicPaused(${1:paused})"
+        ],
+        "description": "SetMusicPaused(paused: boolean)"
+    },
+    "GetMusicProgress": {
+        "prefix": "GetMusicProgress",
+        "body": [
+            "${0:GetMusicProgress(}})"
+        ],
+        "description": "GetMusicProgress()"
+    },
+    "SetMusicProgress": {
+        "prefix": "SetMusicProgress",
+        "body": [
+            "SetMusicProgress(${1:progress})"
+        ],
+        "description": "SetMusicProgress(progress: number)"
+    },
+    "SetMusicVolume": {
+        "prefix": "SetMusicVolume",
+        "body": [
+            "SetMusicVolume(${1:volume})"
+        ],
+        "description": "SetMusicVolume(volume: number)"
+    },
+    "SetMusicLowPass": {
+        "prefix": "SetMusicLowPass",
+        "body": [
+            "SetMusicLowPass(${1:wet})"
+        ],
+        "description": "SetMusicLowPass(wet: number)"
+    },
+    "LoadSprite": {
+        "prefix": "LoadSprite",
+        "body": [
+            "${0:LoadSprite(}${1:path})"
+        ],
+        "description": "LoadSprite(path: string)"
+    },
+    "DrawSprite": {
+        "prefix": "DrawSprite",
+        "body": [
+            "DrawSprite(${1:handle}, ${2:transform}, ${3:width}, ${4:height}, ${5:r}, ${6:g}, ${7:b}, ${8:a}, ${9:depthTest}, ${10:additive}, ${11:fogAffected})"
+        ],
+        "description": "DrawSprite(handle: number, transform: TTransform, width: number, height: number, r: number, g: number, b: number, a: number, depthTest: boolean, additive: boolean, fogAffected: boolean)"
+    },
+    "QueryRequire": {
+        "prefix": "QueryRequire",
+        "body": [
+            "QueryRequire(${1:layers})"
+        ],
+        "description": "QueryRequire(layers: string)"
+    },
+    "QueryInclude": {
+        "prefix": "QueryInclude",
+        "body": [
+            "QueryInclude(${1:layers})"
+        ],
+        "description": "QueryInclude(layers: string)"
+    },
+    "QueryRejectAnimator": {
+        "prefix": "QueryRejectAnimator",
+        "body": [
+            "QueryRejectAnimator(${1:handle})"
+        ],
+        "description": "QueryRejectAnimator(handle: number)"
+    },
+    "QueryRejectVehicle": {
+        "prefix": "QueryRejectVehicle",
+        "body": [
+            "QueryRejectVehicle(${1:vehicle})"
+        ],
+        "description": "QueryRejectVehicle(vehicle: number)"
+    },
+    "QueryRejectBody": {
+        "prefix": "QueryRejectBody",
+        "body": [
+            "QueryRejectBody(${1:body})"
+        ],
+        "description": "QueryRejectBody(body: number)"
+    },
+    "QueryRejectShape": {
+        "prefix": "QueryRejectShape",
+        "body": [
+            "QueryRejectShape(${1:shape})"
+        ],
+        "description": "QueryRejectShape(shape: number)"
+    },
+    "QueryRejectShapes": {
+        "prefix": "QueryRejectShapes",
+        "body": [
+            "QueryRejectShapes(${1:shapes})"
+        ],
+        "description": "QueryRejectShapes(shapes: table)"
+    },
+    "QueryRaycast": {
+        "prefix": "QueryRaycast",
+        "body": [
+            "${0:QueryRaycast(}${1:origin}, ${2:direction}, ${3:maxDist}, ${4:radius}, ${5:rejectTransparent})"
+        ],
+        "description": "QueryRaycast(origin: TVec, direction: TVec, maxDist: number, radius: number, rejectTransparent: boolean)"
+    },
+    "QueryRaycastRope": {
+        "prefix": "QueryRaycastRope",
+        "body": [
+            "${0:QueryRaycastRope(}${1:origin}, ${2:direction}, ${3:maxDist}, ${4:radius})"
+        ],
+        "description": "QueryRaycastRope(origin: TVec, direction: TVec, maxDist: number, radius: number)"
+    },
+    "QueryClosestPoint": {
+        "prefix": "QueryClosestPoint",
+        "body": [
+            "${0:QueryClosestPoint(}${1:origin}, ${2:maxDist})"
+        ],
+        "description": "QueryClosestPoint(origin: TVec, maxDist: number)"
+    },
+    "QueryAabbShapes": {
+        "prefix": "QueryAabbShapes",
+        "body": [
+            "${0:QueryAabbShapes(}${1:min}, ${2:max})"
+        ],
+        "description": "QueryAabbShapes(min: TVec, max: TVec)"
+    },
+    "QueryAabbBodies": {
+        "prefix": "QueryAabbBodies",
+        "body": [
+            "${0:QueryAabbBodies(}${1:min}, ${2:max})"
+        ],
+        "description": "QueryAabbBodies(min: TVec, max: TVec)"
+    },
+    "QueryPath": {
+        "prefix": "QueryPath",
+        "body": [
+            "QueryPath(${1:start}, ${2:end}, ${3:maxDist}, ${4:targetRadius}, ${5:type})"
+        ],
+        "description": "QueryPath(start: TVec, end: TVec, maxDist: number, targetRadius: number, type: string)"
+    },
+    "CreatePathPlanner": {
+        "prefix": "CreatePathPlanner",
+        "body": [
+            "${0:CreatePathPlanner(}})"
+        ],
+        "description": "CreatePathPlanner()"
+    },
+    "DeletePathPlanner": {
+        "prefix": "DeletePathPlanner",
+        "body": [
+            "DeletePathPlanner(${1:id})"
+        ],
+        "description": "DeletePathPlanner(id: number)"
+    },
+    "PathPlannerQuery": {
+        "prefix": "PathPlannerQuery",
+        "body": [
+            "PathPlannerQuery(${1:id}, ${2:start}, ${3:end}, ${4:maxDist}, ${5:targetRadius}, ${6:type})"
+        ],
+        "description": "PathPlannerQuery(id: number, start: TVec, end: TVec, maxDist: number, targetRadius: number, type: string)"
+    },
+    "AbortPath": {
+        "prefix": "AbortPath",
+        "body": [
+            "AbortPath(${1:id})"
+        ],
+        "description": "AbortPath(id: number)"
+    },
+    "GetPathState": {
+        "prefix": "GetPathState",
+        "body": [
+            "${0:GetPathState(}${1:id})"
+        ],
+        "description": "GetPathState(id: number)"
+    },
+    "GetPathLength": {
+        "prefix": "GetPathLength",
+        "body": [
+            "${0:GetPathLength(}${1:id})"
+        ],
+        "description": "GetPathLength(id: number)"
+    },
+    "GetPathPoint": {
+        "prefix": "GetPathPoint",
+        "body": [
+            "${0:GetPathPoint(}${1:dist}, ${2:id})"
+        ],
+        "description": "GetPathPoint(dist: number, id: number)"
+    },
+    "GetLastSound": {
+        "prefix": "GetLastSound",
+        "body": [
+            "${0:GetLastSound(}})"
+        ],
+        "description": "GetLastSound()"
+    },
+    "IsPointInWater": {
+        "prefix": "IsPointInWater",
+        "body": [
+            "${0:IsPointInWater(}${1:point})"
+        ],
+        "description": "IsPointInWater(point: TVec)"
+    },
+    "GetWindVelocity": {
+        "prefix": "GetWindVelocity",
+        "body": [
+            "${0:GetWindVelocity(}${1:point})"
+        ],
+        "description": "GetWindVelocity(point: TVec)"
+    },
+    "ParticleReset": {
+        "prefix": "ParticleReset",
+        "body": [
+            "ParticleReset()"
+        ],
+        "description": "ParticleReset()"
+    },
+    "ParticleType": {
+        "prefix": "ParticleType",
+        "body": [
+            "ParticleType(${1:type})"
+        ],
+        "description": "ParticleType(type: string)"
+    },
+    "ParticleTile": {
+        "prefix": "ParticleTile",
+        "body": [
+            "ParticleTile(${1:type})"
+        ],
+        "description": "ParticleTile(type: number)"
+    },
+    "ParticleColor": {
+        "prefix": "ParticleColor",
+        "body": [
+            "ParticleColor(${1:r0}, ${2:g0}, ${3:b0}, ${4:r1}, ${5:g1}, ${6:b1})"
+        ],
+        "description": "ParticleColor(r0: number, g0: number, b0: number, r1: number, g1: number, b1: number)"
+    },
+    "ParticleRadius": {
+        "prefix": "ParticleRadius",
+        "body": [
+            "ParticleRadius(${1:r0}, ${2:r1}, ${3:interpolation}, ${4:fadein}, ${5:fadeout})"
+        ],
+        "description": "ParticleRadius(r0: number, r1: number, interpolation: string, fadein: number, fadeout: number)"
+    },
+    "ParticleAlpha": {
+        "prefix": "ParticleAlpha",
+        "body": [
+            "ParticleAlpha(${1:a0}, ${2:a1}, ${3:interpolation}, ${4:fadein}, ${5:fadeout})"
+        ],
+        "description": "ParticleAlpha(a0: number, a1: number, interpolation: string, fadein: number, fadeout: number)"
+    },
+    "ParticleGravity": {
+        "prefix": "ParticleGravity",
+        "body": [
+            "ParticleGravity(${1:g0}, ${2:g1}, ${3:interpolation}, ${4:fadein}, ${5:fadeout})"
+        ],
+        "description": "ParticleGravity(g0: number, g1: number, interpolation: string, fadein: number, fadeout: number)"
+    },
+    "ParticleDrag": {
+        "prefix": "ParticleDrag",
+        "body": [
+            "ParticleDrag(${1:d0}, ${2:d1}, ${3:interpolation}, ${4:fadein}, ${5:fadeout})"
+        ],
+        "description": "ParticleDrag(d0: number, d1: number, interpolation: string, fadein: number, fadeout: number)"
+    },
+    "ParticleEmissive": {
+        "prefix": "ParticleEmissive",
+        "body": [
+            "ParticleEmissive(${1:d0}, ${2:d1}, ${3:interpolation}, ${4:fadein}, ${5:fadeout})"
+        ],
+        "description": "ParticleEmissive(d0: number, d1: number, interpolation: string, fadein: number, fadeout: number)"
+    },
+    "ParticleRotation": {
+        "prefix": "ParticleRotation",
+        "body": [
+            "ParticleRotation(${1:r0}, ${2:r1}, ${3:interpolation}, ${4:fadein}, ${5:fadeout})"
+        ],
+        "description": "ParticleRotation(r0: number, r1: number, interpolation: string, fadein: number, fadeout: number)"
+    },
+    "ParticleStretch": {
+        "prefix": "ParticleStretch",
+        "body": [
+            "ParticleStretch(${1:s0}, ${2:s1}, ${3:interpolation}, ${4:fadein}, ${5:fadeout})"
+        ],
+        "description": "ParticleStretch(s0: number, s1: number, interpolation: string, fadein: number, fadeout: number)"
+    },
+    "ParticleSticky": {
+        "prefix": "ParticleSticky",
+        "body": [
+            "ParticleSticky(${1:s0}, ${2:s1}, ${3:interpolation}, ${4:fadein}, ${5:fadeout})"
+        ],
+        "description": "ParticleSticky(s0: number, s1: number, interpolation: string, fadein: number, fadeout: number)"
+    },
+    "ParticleCollide": {
+        "prefix": "ParticleCollide",
+        "body": [
+            "ParticleCollide(${1:c0}, ${2:c1}, ${3:interpolation}, ${4:fadein}, ${5:fadeout})"
+        ],
+        "description": "ParticleCollide(c0: number, c1: number, interpolation: string, fadein: number, fadeout: number)"
+    },
+    "ParticleFlags": {
+        "prefix": "ParticleFlags",
+        "body": [
+            "ParticleFlags(${1:bitmask})"
+        ],
+        "description": "ParticleFlags(bitmask: number)"
+    },
+    "SpawnParticle": {
+        "prefix": "SpawnParticle",
+        "body": [
+            "SpawnParticle(${1:pos}, ${2:velocity}, ${3:lifetime})"
+        ],
+        "description": "SpawnParticle(pos: TVec, velocity: TVec, lifetime: number)"
+    },
+    "Spawn": {
+        "prefix": "Spawn",
+        "body": [
+            "${0:Spawn(}${1:xml}, ${2:transform}, ${3:allowStatic}, ${4:jointExisting})"
+        ],
+        "description": "Spawn(xml: string, transform: TTransform, allowStatic: boolean, jointExisting: boolean)"
+    },
+    "SpawnLayer": {
+        "prefix": "SpawnLayer",
+        "body": [
+            "${0:SpawnLayer(}${1:xml}, ${2:layer}, ${3:transform}, ${4:allowStatic}, ${5:jointExisting})"
+        ],
+        "description": "SpawnLayer(xml: string, layer: string, transform: TTransform, allowStatic: boolean, jointExisting: boolean)"
+    },
+    "Shoot": {
+        "prefix": "Shoot",
+        "body": [
+            "Shoot(${1:origin}, ${2:direction}, ${3:type}, ${4:strength}, ${5:maxDist})"
+        ],
+        "description": "Shoot(origin: TVec, direction: TVec, type: string, strength: number, maxDist: number)"
+    },
+    "Paint": {
+        "prefix": "Paint",
+        "body": [
+            "Paint(${1:origin}, ${2:radius}, ${3:type}, ${4:probability})"
+        ],
+        "description": "Paint(origin: TVec, radius: number, type: string, probability: number)"
+    },
+    "PaintRGBA": {
+        "prefix": "PaintRGBA",
+        "body": [
+            "PaintRGBA(${1:origin}, ${2:radius}, ${3:red}, ${4:green}, ${5:blue}, ${6:alpha}, ${7:probability})"
+        ],
+        "description": "PaintRGBA(origin: TVec, radius: number, red: number, green: number, blue: number, alpha: number, probability: number)"
+    },
+    "MakeHole": {
+        "prefix": "MakeHole",
+        "body": [
+            "${0:MakeHole(}${1:position}, ${2:r0}, ${3:r1}, ${4:r2}, ${5:silent})"
+        ],
+        "description": "MakeHole(position: TVec, r0: number, r1: number, r2: number, silent: boolean)"
+    },
+    "Explosion": {
+        "prefix": "Explosion",
+        "body": [
+            "Explosion(${1:pos}, ${2:size})"
+        ],
+        "description": "Explosion(pos: TVec, size: number)"
+    },
+    "SpawnFire": {
+        "prefix": "SpawnFire",
+        "body": [
+            "SpawnFire(${1:pos})"
+        ],
+        "description": "SpawnFire(pos: TVec)"
+    },
+    "GetFireCount": {
+        "prefix": "GetFireCount",
+        "body": [
+            "${0:GetFireCount(}})"
+        ],
+        "description": "GetFireCount()"
+    },
+    "QueryClosestFire": {
+        "prefix": "QueryClosestFire",
+        "body": [
+            "${0:QueryClosestFire(}${1:origin}, ${2:maxDist})"
+        ],
+        "description": "QueryClosestFire(origin: TVec, maxDist: number)"
+    },
+    "QueryAabbFireCount": {
+        "prefix": "QueryAabbFireCount",
+        "body": [
+            "${0:QueryAabbFireCount(}${1:min}, ${2:max})"
+        ],
+        "description": "QueryAabbFireCount(min: TVec, max: TVec)"
+    },
+    "RemoveAabbFires": {
+        "prefix": "RemoveAabbFires",
+        "body": [
+            "${0:RemoveAabbFires(}${1:min}, ${2:max})"
+        ],
+        "description": "RemoveAabbFires(min: TVec, max: TVec)"
+    },
+    "GetCameraTransform": {
+        "prefix": "GetCameraTransform",
+        "body": [
+            "${0:GetCameraTransform(}})"
+        ],
+        "description": "GetCameraTransform()"
+    },
+    "SetCameraTransform": {
+        "prefix": "SetCameraTransform",
+        "body": [
+            "SetCameraTransform(${1:transform}, ${2:fov})"
+        ],
+        "description": "SetCameraTransform(transform: TTransform, fov: number)"
+    },
+    "RequestFirstPerson": {
+        "prefix": "RequestFirstPerson",
+        "body": [
+            "RequestFirstPerson(${1:transition})"
+        ],
+        "description": "RequestFirstPerson(transition: boolean)"
+    },
+    "RequestThirdPerson": {
+        "prefix": "RequestThirdPerson",
+        "body": [
+            "RequestThirdPerson(${1:transition})"
+        ],
+        "description": "RequestThirdPerson(transition: boolean)"
+    },
+    "SetCameraOffsetTransform": {
+        "prefix": "SetCameraOffsetTransform",
+        "body": [
+            "SetCameraOffsetTransform(${1:transform}, ${2:stackable})"
+        ],
+        "description": "SetCameraOffsetTransform(transform: TTransform, stackable: boolean)"
+    },
+    "AttachCameraTo": {
+        "prefix": "AttachCameraTo",
+        "body": [
+            "AttachCameraTo(${1:handle}, ${2:ignoreRotation})"
+        ],
+        "description": "AttachCameraTo(handle: number, ignoreRotation: boolean)"
+    },
+    "SetPivotClipBody": {
+        "prefix": "SetPivotClipBody",
+        "body": [
+            "SetPivotClipBody(${1:bodyHandle}, ${2:mainShapeIdx})"
+        ],
+        "description": "SetPivotClipBody(bodyHandle: number, mainShapeIdx: number)"
+    },
+    "ShakeCamera": {
+        "prefix": "ShakeCamera",
+        "body": [
+            "ShakeCamera(${1:strength})"
+        ],
+        "description": "ShakeCamera(strength: number)"
+    },
+    "SetCameraFov": {
+        "prefix": "SetCameraFov",
+        "body": [
+            "SetCameraFov(${1:degrees})"
+        ],
+        "description": "SetCameraFov(degrees: number)"
+    },
+    "SetCameraDof": {
+        "prefix": "SetCameraDof",
+        "body": [
+            "SetCameraDof(${1:distance}, ${2:amount})"
+        ],
+        "description": "SetCameraDof(distance: number, amount: number)"
+    },
+    "PointLight": {
+        "prefix": "PointLight",
+        "body": [
+            "PointLight(${1:pos}, ${2:r}, ${3:g}, ${4:b}, ${5:intensity})"
+        ],
+        "description": "PointLight(pos: TVec, r: number, g: number, b: number, intensity: number)"
+    },
+    "SetTimeScale": {
+        "prefix": "SetTimeScale",
+        "body": [
+            "SetTimeScale(${1:scale})"
+        ],
+        "description": "SetTimeScale(scale: number)"
+    },
+    "SetEnvironmentDefault": {
+        "prefix": "SetEnvironmentDefault",
+        "body": [
+            "SetEnvironmentDefault()"
+        ],
+        "description": "SetEnvironmentDefault()"
+    },
+    "SetEnvironmentProperty": {
+        "prefix": "SetEnvironmentProperty",
+        "body": [
+            "SetEnvironmentProperty(${1:name}, ${2:value0}, ${3:value1}, ${4:value2}, ${5:value3})"
+        ],
+        "description": "SetEnvironmentProperty(name: string, value0: any, value1: any, value2: any, value3: any)"
+    },
+    "GetEnvironmentProperty": {
+        "prefix": "GetEnvironmentProperty",
+        "body": [
+            "${0:GetEnvironmentProperty(}${1:name})"
+        ],
+        "description": "GetEnvironmentProperty(name: string)"
+    },
+    "SetPostProcessingDefault": {
+        "prefix": "SetPostProcessingDefault",
+        "body": [
+            "SetPostProcessingDefault()"
+        ],
+        "description": "SetPostProcessingDefault()"
+    },
+    "SetPostProcessingProperty": {
+        "prefix": "SetPostProcessingProperty",
+        "body": [
+            "SetPostProcessingProperty(${1:name}, ${2:value0}, ${3:value1}, ${4:value2})"
+        ],
+        "description": "SetPostProcessingProperty(name: string, value0: number, value1: number, value2: number)"
+    },
+    "GetPostProcessingProperty": {
+        "prefix": "GetPostProcessingProperty",
+        "body": [
+            "${0:GetPostProcessingProperty(}${1:name})"
+        ],
+        "description": "GetPostProcessingProperty(name: string)"
+    },
+    "DrawLine": {
+        "prefix": "DrawLine",
+        "body": [
+            "DrawLine(${1:p0}, ${2:p1}, ${3:r}, ${4:g}, ${5:b}, ${6:a})"
+        ],
+        "description": "DrawLine(p0: TVec, p1: TVec, r: number, g: number, b: number, a: number)"
+    },
+    "DebugLine": {
+        "prefix": "DebugLine",
+        "body": [
+            "DebugLine(${1:p0}, ${2:p1}, ${3:r}, ${4:g}, ${5:b}, ${6:a})"
+        ],
+        "description": "DebugLine(p0: TVec, p1: TVec, r: number, g: number, b: number, a: number)"
+    },
+    "DebugCross": {
+        "prefix": "DebugCross",
+        "body": [
+            "DebugCross(${1:p0}, ${2:r}, ${3:g}, ${4:b}, ${5:a})"
+        ],
+        "description": "DebugCross(p0: TVec, r: number, g: number, b: number, a: number)"
+    },
+    "DebugTransform": {
+        "prefix": "DebugTransform",
+        "body": [
+            "DebugTransform(${1:transform}, ${2:scale})"
+        ],
+        "description": "DebugTransform(transform: TTransform, scale: number)"
+    },
+    "DebugWatch": {
+        "prefix": "DebugWatch",
+        "body": [
+            "DebugWatch(${1:name}, ${2:value}, ${3:lineWrapping})"
+        ],
+        "description": "DebugWatch(name: string, value: string, lineWrapping: boolean)"
+    },
+    "DebugPrint": {
+        "prefix": "DebugPrint",
+        "body": [
+            "DebugPrint(${1:message}, ${2:lineWrapping})"
+        ],
+        "description": "DebugPrint(message: string, lineWrapping: boolean)"
+    },
+    "RegisterListenerTo": {
+        "prefix": "RegisterListenerTo",
+        "body": [
+            "RegisterListenerTo(${1:eventName}, ${2:listenerFunction})"
+        ],
+        "description": "RegisterListenerTo(eventName: string, listenerFunction: string)"
+    },
+    "UnregisterListener": {
+        "prefix": "UnregisterListener",
+        "body": [
+            "UnregisterListener(${1:eventName}, ${2:listenerFunction})"
+        ],
+        "description": "UnregisterListener(eventName: string, listenerFunction: string)"
+    },
+    "TriggerEvent": {
+        "prefix": "TriggerEvent",
+        "body": [
+            "TriggerEvent(${1:eventName}, ${2:args})"
+        ],
+        "description": "TriggerEvent(eventName: string, args: string)"
+    },
+    "LoadHaptic": {
+        "prefix": "LoadHaptic",
+        "body": [
+            "${0:LoadHaptic(}${1:filepath})"
+        ],
+        "description": "LoadHaptic(filepath: string)"
+    },
+    "CreateHaptic": {
+        "prefix": "CreateHaptic",
+        "body": [
+            "${0:CreateHaptic(}${1:leftMotorRumble}, ${2:rightMotorRumble}, ${3:leftTriggerRumble}, ${4:rightTriggerRumble})"
+        ],
+        "description": "CreateHaptic(leftMotorRumble: number, rightMotorRumble: number, leftTriggerRumble: number, rightTriggerRumble: number)"
+    },
+    "PlayHaptic": {
+        "prefix": "PlayHaptic",
+        "body": [
+            "PlayHaptic(${1:handle}, ${2:amplitude})"
+        ],
+        "description": "PlayHaptic(handle: string, amplitude: number)"
+    },
+    "PlayHapticDirectional": {
+        "prefix": "PlayHapticDirectional",
+        "body": [
+            "PlayHapticDirectional(${1:handle}, ${2:direction}, ${3:amplitude})"
+        ],
+        "description": "PlayHapticDirectional(handle: string, direction: TVec, amplitude: number)"
+    },
+    "HapticIsPlaying": {
+        "prefix": "HapticIsPlaying",
+        "body": [
+            "${0:HapticIsPlaying(}${1:handle})"
+        ],
+        "description": "HapticIsPlaying(handle: string)"
+    },
+    "SetToolHaptic": {
+        "prefix": "SetToolHaptic",
+        "body": [
+            "SetToolHaptic(${1:id}, ${2:handle}, ${3:amplitude})"
+        ],
+        "description": "SetToolHaptic(id: string, handle: string, amplitude: number)"
+    },
+    "StopHaptic": {
+        "prefix": "StopHaptic",
+        "body": [
+            "StopHaptic(${1:handle})"
+        ],
+        "description": "StopHaptic(handle: string)"
+    },
+    "SetVehicleHealth": {
+        "prefix": "SetVehicleHealth",
+        "body": [
+            "SetVehicleHealth(${1:vehicle}, ${2:health})"
+        ],
+        "description": "SetVehicleHealth(vehicle: number, health: number)"
+    },
+    "QueryRaycastWater": {
+        "prefix": "QueryRaycastWater",
+        "body": [
+            "${0:QueryRaycastWater(}${1:origin}, ${2:direction}, ${3:maxDist})"
+        ],
+        "description": "QueryRaycastWater(origin: TVec, direction: TVec, maxDist: number)"
+    },
+    "AddHeat": {
+        "prefix": "AddHeat",
+        "body": [
+            "AddHeat(${1:shape}, ${2:pos}, ${3:amount})"
+        ],
+        "description": "AddHeat(shape: number, pos: TVec, amount: number)"
+    },
+    "GetGravity": {
+        "prefix": "GetGravity",
+        "body": [
+            "${0:GetGravity(}})"
+        ],
+        "description": "GetGravity()"
+    },
+    "SetGravity": {
+        "prefix": "SetGravity",
+        "body": [
+            "SetGravity(${1:vec})"
+        ],
+        "description": "SetGravity(vec: TVec)"
+    },
+    "GetFps": {
+        "prefix": "GetFps",
+        "body": [
+            "${0:GetFps(}})"
+        ],
+        "description": "GetFps()"
+    },
+    "UiMakeInteractive": {
+        "prefix": "UiMakeInteractive",
+        "body": [
+            "UiMakeInteractive()"
+        ],
+        "description": "UiMakeInteractive()"
+    },
+    "UiPush": {
+        "prefix": "UiPush",
+        "body": [
+            "UiPush()"
+        ],
+        "description": "UiPush()"
+    },
+    "UiPop": {
+        "prefix": "UiPop",
+        "body": [
+            "UiPop()"
+        ],
+        "description": "UiPop()"
+    },
+    "UiWidth": {
+        "prefix": "UiWidth",
+        "body": [
+            "${0:UiWidth(}})"
+        ],
+        "description": "UiWidth()"
+    },
+    "UiHeight": {
+        "prefix": "UiHeight",
+        "body": [
+            "${0:UiHeight(}})"
+        ],
+        "description": "UiHeight()"
+    },
+    "UiCenter": {
+        "prefix": "UiCenter",
+        "body": [
+            "${0:UiCenter(}})"
+        ],
+        "description": "UiCenter()"
+    },
+    "UiMiddle": {
+        "prefix": "UiMiddle",
+        "body": [
+            "${0:UiMiddle(}})"
+        ],
+        "description": "UiMiddle()"
+    },
+    "UiColor": {
+        "prefix": "UiColor",
+        "body": [
+            "UiColor(${1:r}, ${2:g}, ${3:b}, ${4:a})"
+        ],
+        "description": "UiColor(r: number, g: number, b: number, a: number)"
+    },
+    "UiColorFilter": {
+        "prefix": "UiColorFilter",
+        "body": [
+            "UiColorFilter(${1:r}, ${2:g}, ${3:b}, ${4:a})"
+        ],
+        "description": "UiColorFilter(r: number, g: number, b: number, a: number)"
+    },
+    "UiResetColor": {
+        "prefix": "UiResetColor",
+        "body": [
+            "UiResetColor()"
+        ],
+        "description": "UiResetColor()"
+    },
+    "UiTranslate": {
+        "prefix": "UiTranslate",
+        "body": [
+            "UiTranslate(${1:x}, ${2:y})"
+        ],
+        "description": "UiTranslate(x: number, y: number)"
+    },
+    "UiRotate": {
+        "prefix": "UiRotate",
+        "body": [
+            "UiRotate(${1:angle})"
+        ],
+        "description": "UiRotate(angle: number)"
+    },
+    "UiScale": {
+        "prefix": "UiScale",
+        "body": [
+            "UiScale(${1:x}, ${2:y})"
+        ],
+        "description": "UiScale(x: number, y: number)"
+    },
+    "UiGetScale": {
+        "prefix": "UiGetScale",
+        "body": [
+            "${0:UiGetScale(}})"
+        ],
+        "description": "UiGetScale()"
+    },
+    "UiClipRect": {
+        "prefix": "UiClipRect",
+        "body": [
+            "UiClipRect(${1:width}, ${2:height}, ${3:inherit})"
+        ],
+        "description": "UiClipRect(width: number, height: number, inherit: boolean)"
+    },
+    "UiWindow": {
+        "prefix": "UiWindow",
+        "body": [
+            "UiWindow(${1:width}, ${2:height}, ${3:clip}, ${4:inherit})"
+        ],
+        "description": "UiWindow(width: number, height: number, clip: boolean, inherit: boolean)"
+    },
+    "UiGetCurrentWindow": {
+        "prefix": "UiGetCurrentWindow",
+        "body": [
+            "${0:UiGetCurrentWindow(}})"
+        ],
+        "description": "UiGetCurrentWindow()"
+    },
+    "UiIsInCurrentWindow": {
+        "prefix": "UiIsInCurrentWindow",
+        "body": [
+            "${0:UiIsInCurrentWindow(}${1:x}, ${2:y})"
+        ],
+        "description": "UiIsInCurrentWindow(x: number, y: number)"
+    },
+    "UiIsRectFullyClipped": {
+        "prefix": "UiIsRectFullyClipped",
+        "body": [
+            "${0:UiIsRectFullyClipped(}${1:w}, ${2:h})"
+        ],
+        "description": "UiIsRectFullyClipped(w: number, h: number)"
+    },
+    "UiIsInClipRegion": {
+        "prefix": "UiIsInClipRegion",
+        "body": [
+            "${0:UiIsInClipRegion(}${1:x}, ${2:y})"
+        ],
+        "description": "UiIsInClipRegion(x: number, y: number)"
+    },
+    "UiIsFullyClipped": {
+        "prefix": "UiIsFullyClipped",
+        "body": [
+            "${0:UiIsFullyClipped(}${1:w}, ${2:h})"
+        ],
+        "description": "UiIsFullyClipped(w: number, h: number)"
+    },
+    "UiSafeMargins": {
+        "prefix": "UiSafeMargins",
+        "body": [
+            "${0:UiSafeMargins(}})"
+        ],
+        "description": "UiSafeMargins()"
+    },
+    "UiCanvasSize": {
+        "prefix": "UiCanvasSize",
+        "body": [
+            "${0:UiCanvasSize(}})"
+        ],
+        "description": "UiCanvasSize()"
+    },
+    "UiAlign": {
+        "prefix": "UiAlign",
+        "body": [
+            "UiAlign(${1:alignment})"
+        ],
+        "description": "UiAlign(alignment: string)"
+    },
+    "UiTextAlignment": {
+        "prefix": "UiTextAlignment",
+        "body": [
+            "UiTextAlignment(${1:alignment})"
+        ],
+        "description": "UiTextAlignment(alignment: string)"
+    },
+    "UiModalBegin": {
+        "prefix": "UiModalBegin",
+        "body": [
+            "UiModalBegin(${1:force})"
+        ],
+        "description": "UiModalBegin(force: boolean)"
+    },
+    "UiModalEnd": {
+        "prefix": "UiModalEnd",
+        "body": [
+            "UiModalEnd()"
+        ],
+        "description": "UiModalEnd()"
+    },
+    "UiDisableInput": {
+        "prefix": "UiDisableInput",
+        "body": [
+            "UiDisableInput()"
+        ],
+        "description": "UiDisableInput()"
+    },
+    "UiEnableInput": {
+        "prefix": "UiEnableInput",
+        "body": [
+            "UiEnableInput()"
+        ],
+        "description": "UiEnableInput()"
+    },
+    "UiReceivesInput": {
+        "prefix": "UiReceivesInput",
+        "body": [
+            "${0:UiReceivesInput(}})"
+        ],
+        "description": "UiReceivesInput()"
+    },
+    "UiGetMousePos": {
+        "prefix": "UiGetMousePos",
+        "body": [
+            "${0:UiGetMousePos(}})"
+        ],
+        "description": "UiGetMousePos()"
+    },
+    "UiGetCanvasMousePos": {
+        "prefix": "UiGetCanvasMousePos",
+        "body": [
+            "${0:UiGetCanvasMousePos(}})"
+        ],
+        "description": "UiGetCanvasMousePos()"
+    },
+    "UiIsMouseInRect": {
+        "prefix": "UiIsMouseInRect",
+        "body": [
+            "${0:UiIsMouseInRect(}${1:w}, ${2:h})"
+        ],
+        "description": "UiIsMouseInRect(w: number, h: number)"
+    },
+    "UiWorldToPixel": {
+        "prefix": "UiWorldToPixel",
+        "body": [
+            "${0:UiWorldToPixel(}${1:point})"
+        ],
+        "description": "UiWorldToPixel(point: TVec)"
+    },
+    "UiPixelToWorld": {
+        "prefix": "UiPixelToWorld",
+        "body": [
+            "${0:UiPixelToWorld(}${1:x}, ${2:y})"
+        ],
+        "description": "UiPixelToWorld(x: number, y: number)"
+    },
+    "UiGetCursorPos": {
+        "prefix": "UiGetCursorPos",
+        "body": [
+            "UiGetCursorPos()"
+        ],
+        "description": "UiGetCursorPos()"
+    },
+    "UiBlur": {
+        "prefix": "UiBlur",
+        "body": [
+            "UiBlur(${1:amount})"
+        ],
+        "description": "UiBlur(amount: number)"
+    },
+    "UiFont": {
+        "prefix": "UiFont",
+        "body": [
+            "UiFont(${1:path}, ${2:size})"
+        ],
+        "description": "UiFont(path: string, size: number)"
+    },
+    "UiFontHeight": {
+        "prefix": "UiFontHeight",
+        "body": [
+            "${0:UiFontHeight(}})"
+        ],
+        "description": "UiFontHeight()"
+    },
+    "UiText": {
+        "prefix": "UiText",
+        "body": [
+            "${0:UiText(}${1:text}, ${2:move}, ${3:maxChars})"
+        ],
+        "description": "UiText(text: string, move: boolean, maxChars: number)"
+    },
+    "UiTextDisableWildcards": {
+        "prefix": "UiTextDisableWildcards",
+        "body": [
+            "UiTextDisableWildcards(${1:disable})"
+        ],
+        "description": "UiTextDisableWildcards(disable: boolean)"
+    },
+    "UiTextUniformHeight": {
+        "prefix": "UiTextUniformHeight",
+        "body": [
+            "UiTextUniformHeight(${1:uniform})"
+        ],
+        "description": "UiTextUniformHeight(uniform: boolean)"
+    },
+    "UiGetTextSize": {
+        "prefix": "UiGetTextSize",
+        "body": [
+            "${0:UiGetTextSize(}${1:text})"
+        ],
+        "description": "UiGetTextSize(text: string)"
+    },
+    "UiMeasureText": {
+        "prefix": "UiMeasureText",
+        "body": [
+            "${0:UiMeasureText(}${1:space}, ${2:text/locale})"
+        ],
+        "description": "UiMeasureText(space: number, text/locale: string,)"
+    },
+    "UiGetSymbolsCount": {
+        "prefix": "UiGetSymbolsCount",
+        "body": [
+            "${0:UiGetSymbolsCount(}${1:text})"
+        ],
+        "description": "UiGetSymbolsCount(text: string)"
+    },
+    "UiTextSymbolsSub": {
+        "prefix": "UiTextSymbolsSub",
+        "body": [
+            "${0:UiTextSymbolsSub(}${1:text}, ${2:from}, ${3:to})"
+        ],
+        "description": "UiTextSymbolsSub(text: string, from: number, to: number)"
+    },
+    "UiWordWrap": {
+        "prefix": "UiWordWrap",
+        "body": [
+            "UiWordWrap(${1:width})"
+        ],
+        "description": "UiWordWrap(width: number)"
+    },
+    "UiTextLineSpacing": {
+        "prefix": "UiTextLineSpacing",
+        "body": [
+            "UiTextLineSpacing(${1:value})"
+        ],
+        "description": "UiTextLineSpacing(value: number)"
+    },
+    "UiTextOutline": {
+        "prefix": "UiTextOutline",
+        "body": [
+            "UiTextOutline(${1:r}, ${2:g}, ${3:b}, ${4:a}, ${5:thickness})"
+        ],
+        "description": "UiTextOutline(r: number, g: number, b: number, a: number, thickness: number)"
+    },
+    "UiTextShadow": {
+        "prefix": "UiTextShadow",
+        "body": [
+            "UiTextShadow(${1:r}, ${2:g}, ${3:b}, ${4:a}, ${5:distance}, ${6:blur})"
+        ],
+        "description": "UiTextShadow(r: number, g: number, b: number, a: number, distance: number, blur: number)"
+    },
+    "UiRect": {
+        "prefix": "UiRect",
+        "body": [
+            "UiRect(${1:w}, ${2:h})"
+        ],
+        "description": "UiRect(w: number, h: number)"
+    },
+    "UiRectOutline": {
+        "prefix": "UiRectOutline",
+        "body": [
+            "UiRectOutline(${1:width}, ${2:height}, ${3:thickness})"
+        ],
+        "description": "UiRectOutline(width: number, height: number, thickness: number)"
+    },
+    "UiRoundedRect": {
+        "prefix": "UiRoundedRect",
+        "body": [
+            "UiRoundedRect(${1:width}, ${2:height}, ${3:roundingRadius})"
+        ],
+        "description": "UiRoundedRect(width: number, height: number, roundingRadius: number)"
+    },
+    "UiRoundedRectOutline": {
+        "prefix": "UiRoundedRectOutline",
+        "body": [
+            "UiRoundedRectOutline(${1:width}, ${2:height}, ${3:roundingRadius}, ${4:thickness})"
+        ],
+        "description": "UiRoundedRectOutline(width: number, height: number, roundingRadius: number, thickness: number)"
+    },
+    "UiCircle": {
+        "prefix": "UiCircle",
+        "body": [
+            "UiCircle(${1:radius})"
+        ],
+        "description": "UiCircle(radius: number)"
+    },
+    "UiCircleOutline": {
+        "prefix": "UiCircleOutline",
+        "body": [
+            "UiCircleOutline(${1:radius}, ${2:thickness})"
+        ],
+        "description": "UiCircleOutline(radius: number, thickness: number)"
+    },
+    "UiFillImage": {
+        "prefix": "UiFillImage",
+        "body": [
+            "UiFillImage(${1:path})"
+        ],
+        "description": "UiFillImage(path: string)"
+    },
+    "UiImage": {
+        "prefix": "UiImage",
+        "body": [
+            "${0:UiImage(}${1:path}, ${2:x0}, ${3:y0}, ${4:x1}, ${5:y1})"
+        ],
+        "description": "UiImage(path: string, x0: number, y0: number, x1: number, y1: number)"
+    },
+    "UiUnloadImage": {
+        "prefix": "UiUnloadImage",
+        "body": [
+            "UiUnloadImage(${1:path})"
+        ],
+        "description": "UiUnloadImage(path: string)"
+    },
+    "UiHasImage": {
+        "prefix": "UiHasImage",
+        "body": [
+            "${0:UiHasImage(}${1:path})"
+        ],
+        "description": "UiHasImage(path: string)"
+    },
+    "UiGetImageSize": {
+        "prefix": "UiGetImageSize",
+        "body": [
+            "${0:UiGetImageSize(}${1:path})"
+        ],
+        "description": "UiGetImageSize(path: string)"
+    },
+    "UiImageBox": {
+        "prefix": "UiImageBox",
+        "body": [
+            "UiImageBox(${1:path}, ${2:width}, ${3:height}, ${4:borderWidth}, ${5:borderHeight})"
+        ],
+        "description": "UiImageBox(path: string, width: number, height: number, borderWidth: number, borderHeight: number)"
+    },
+    "UiSound": {
+        "prefix": "UiSound",
+        "body": [
+            "UiSound(${1:path}, ${2:volume}, ${3:pitch}, ${4:panAzimuth}, ${5:panDepth})"
+        ],
+        "description": "UiSound(path: string, volume: number, pitch: number, panAzimuth: number, panDepth: number)"
+    },
+    "UiSoundLoop": {
+        "prefix": "UiSoundLoop",
+        "body": [
+            "UiSoundLoop(${1:path}, ${2:volume}, ${3:pitch})"
+        ],
+        "description": "UiSoundLoop(path: string, volume: number, pitch: number)"
+    },
+    "UiMute": {
+        "prefix": "UiMute",
+        "body": [
+            "UiMute(${1:amount}, ${2:music})"
+        ],
+        "description": "UiMute(amount: number, music: boolean)"
+    },
+    "UiButtonImageBox": {
+        "prefix": "UiButtonImageBox",
+        "body": [
+            "UiButtonImageBox(${1:path}, ${2:borderWidth}, ${3:borderHeight}, ${4:r}, ${5:g}, ${6:b}, ${7:a})"
+        ],
+        "description": "UiButtonImageBox(path: string, borderWidth: number, borderHeight: number, r: number, g: number, b: number, a: number)"
+    },
+    "UiButtonHoverColor": {
+        "prefix": "UiButtonHoverColor",
+        "body": [
+            "UiButtonHoverColor(${1:r}, ${2:g}, ${3:b}, ${4:a})"
+        ],
+        "description": "UiButtonHoverColor(r: number, g: number, b: number, a: number)"
+    },
+    "UiButtonPressColor": {
+        "prefix": "UiButtonPressColor",
+        "body": [
+            "UiButtonPressColor(${1:r}, ${2:g}, ${3:b}, ${4:a})"
+        ],
+        "description": "UiButtonPressColor(r: number, g: number, b: number, a: number)"
+    },
+    "UiButtonPressDist": {
+        "prefix": "UiButtonPressDist",
+        "body": [
+            "UiButtonPressDist(${1:distX}, ${2:distY})"
+        ],
+        "description": "UiButtonPressDist(distX: number, distY: number)"
+    },
+    "UiButtonTextHandling": {
+        "prefix": "UiButtonTextHandling",
+        "body": [
+            "UiButtonTextHandling(${1:type})"
+        ],
+        "description": "UiButtonTextHandling(type: number)"
+    },
+    "UiTextButton": {
+        "prefix": "UiTextButton",
+        "body": [
+            "${0:UiTextButton(}${1:text}, ${2:w}, ${3:h})"
+        ],
+        "description": "UiTextButton(text: string, w: number, h: number)"
+    },
+    "UiImageButton": {
+        "prefix": "UiImageButton",
+        "body": [
+            "${0:UiImageButton(}${1:path})"
+        ],
+        "description": "UiImageButton(path: string)"
+    },
+    "UiBlankButton": {
+        "prefix": "UiBlankButton",
+        "body": [
+            "${0:UiBlankButton(}${1:w}, ${2:h})"
+        ],
+        "description": "UiBlankButton(w: number, h: number)"
+    },
+    "UiSlider": {
+        "prefix": "UiSlider",
+        "body": [
+            "${0:UiSlider(}${1:path}, ${2:axis}, ${3:current}, ${4:min}, ${5:max})"
+        ],
+        "description": "UiSlider(path: string, axis: string, current: number, min: number, max: number)"
+    },
+    "UiSliderHoverColorFilter": {
+        "prefix": "UiSliderHoverColorFilter",
+        "body": [
+            "UiSliderHoverColorFilter(${1:r}, ${2:g}, ${3:b}, ${4:a})"
+        ],
+        "description": "UiSliderHoverColorFilter(r: number, g: number, b: number, a: number)"
+    },
+    "UiSliderThumbSize": {
+        "prefix": "UiSliderThumbSize",
+        "body": [
+            "UiSliderThumbSize(${1:width}, ${2:height})"
+        ],
+        "description": "UiSliderThumbSize(width: number, height: number)"
+    },
+    "UiGetScreen": {
+        "prefix": "UiGetScreen",
+        "body": [
+            "${0:UiGetScreen(}})"
+        ],
+        "description": "UiGetScreen()"
+    },
+    "UiNavComponent": {
+        "prefix": "UiNavComponent",
+        "body": [
+            "${0:UiNavComponent(}${1:w}, ${2:h})"
+        ],
+        "description": "UiNavComponent(w: number, h: number)"
+    },
+    "UiIgnoreNavigation": {
+        "prefix": "UiIgnoreNavigation",
+        "body": [
+            "UiIgnoreNavigation(${1:ignore})"
+        ],
+        "description": "UiIgnoreNavigation(ignore: boolean)"
+    },
+    "UiResetNavigation": {
+        "prefix": "UiResetNavigation",
+        "body": [
+            "UiResetNavigation()"
+        ],
+        "description": "UiResetNavigation()"
+    },
+    "UiNavSkipUpdate": {
+        "prefix": "UiNavSkipUpdate",
+        "body": [
+            "UiNavSkipUpdate()"
+        ],
+        "description": "UiNavSkipUpdate()"
+    },
+    "UiIsComponentInFocus": {
+        "prefix": "UiIsComponentInFocus",
+        "body": [
+            "${0:UiIsComponentInFocus(}${1:id})"
+        ],
+        "description": "UiIsComponentInFocus(id: string)"
+    },
+    "UiNavGroupBegin": {
+        "prefix": "UiNavGroupBegin",
+        "body": [
+            "${0:UiNavGroupBegin(}${1:id})"
+        ],
+        "description": "UiNavGroupBegin(id: string)"
+    },
+    "UiNavGroupEnd": {
+        "prefix": "UiNavGroupEnd",
+        "body": [
+            "UiNavGroupEnd()"
+        ],
+        "description": "UiNavGroupEnd()"
+    },
+    "UiNavGroupSize": {
+        "prefix": "UiNavGroupSize",
+        "body": [
+            "UiNavGroupSize(${1:w}, ${2:h})"
+        ],
+        "description": "UiNavGroupSize(w: number, h: number)"
+    },
+    "UiForceFocus": {
+        "prefix": "UiForceFocus",
+        "body": [
+            "UiForceFocus(${1:id})"
+        ],
+        "description": "UiForceFocus(id: string)"
+    },
+    "UiFocusedComponentId": {
+        "prefix": "UiFocusedComponentId",
+        "body": [
+            "${0:UiFocusedComponentId(}})"
+        ],
+        "description": "UiFocusedComponentId()"
+    },
+    "UiFocusedComponentRect": {
+        "prefix": "UiFocusedComponentRect",
+        "body": [
+            "${0:UiFocusedComponentRect(}${1:n})"
+        ],
+        "description": "UiFocusedComponentRect(n: number)"
+    },
+    "UiGetItemSize": {
+        "prefix": "UiGetItemSize",
+        "body": [
+            "${0:UiGetItemSize(}})"
+        ],
+        "description": "UiGetItemSize()"
+    },
+    "UiAutoTranslate": {
+        "prefix": "UiAutoTranslate",
+        "body": [
+            "UiAutoTranslate(${1:value})"
+        ],
+        "description": "UiAutoTranslate(value: boolean)"
+    },
+    "UiBeginFrame": {
+        "prefix": "UiBeginFrame",
+        "body": [
+            "UiBeginFrame()"
+        ],
+        "description": "UiBeginFrame()"
+    },
+    "UiResetFrame": {
+        "prefix": "UiResetFrame",
+        "body": [
+            "UiResetFrame()"
+        ],
+        "description": "UiResetFrame()"
+    },
+    "UiFrameOccupy": {
+        "prefix": "UiFrameOccupy",
+        "body": [
+            "UiFrameOccupy(${1:width}, ${2:height})"
+        ],
+        "description": "UiFrameOccupy(width: number, height: number)"
+    },
+    "UiEndFrame": {
+        "prefix": "UiEndFrame",
+        "body": [
+            "${0:UiEndFrame(}})"
+        ],
+        "description": "UiEndFrame()"
+    },
+    "UiFrameSkipItem": {
+        "prefix": "UiFrameSkipItem",
+        "body": [
+            "UiFrameSkipItem(${1:skip})"
+        ],
+        "description": "UiFrameSkipItem(skip: boolean)"
+    },
+    "UiGetFrameNo": {
+        "prefix": "UiGetFrameNo",
+        "body": [
+            "${0:UiGetFrameNo(}})"
+        ],
+        "description": "UiGetFrameNo()"
+    },
+    "UiGetLanguage": {
+        "prefix": "UiGetLanguage",
+        "body": [
+            "${0:UiGetLanguage(}})"
+        ],
+        "description": "UiGetLanguage()"
+    },
+    "UiSetCursorState": {
+        "prefix": "UiSetCursorState",
+        "body": [
+            "UiSetCursorState(${1:state})"
+        ],
+        "description": "UiSetCursorState(state: number)"
+    }
+}
