@@ -1,0 +1,26 @@
+{
+  "name": "td-api-snippets",
+  "displayName": "Teardown API Snippets (1.6.0)",
+  "icon": "image/icon.png",
+  "publisher": "UwQ",
+  "description": "Updated Teardown API code snippets",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "lua",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  },
+  "repository": {
+		"type": "git",
+		"url": "https://github.com/UwQ-Official/td-api-vscode"
+	}
+}
