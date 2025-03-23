@@ -17,3 +17,7 @@ Expect updates to come with Teardown Documentation updates.
 ### 1.0.0
 
 - Initial release
+
+### 1.0.1
+
+- Fixed issue [#1](https://github.com/UwQ-Official/td-api-vscode/issues/1)
