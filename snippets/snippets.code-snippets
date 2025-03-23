@@ -39,7 +39,7 @@
     "GetVersion": {
         "prefix": "GetVersion",
         "body": [
-            "${0:GetVersion(}})"
+            "${0:GetVersion(})"
         ],
         "description": "GetVersion()"
     },
@@ -53,21 +53,21 @@
     "GetTime": {
         "prefix": "GetTime",
         "body": [
-            "${0:GetTime(}})"
+            "${0:GetTime(})"
         ],
         "description": "GetTime()"
     },
     "GetTimeStep": {
         "prefix": "GetTimeStep",
         "body": [
-            "${0:GetTimeStep(}})"
+            "${0:GetTimeStep(})"
         ],
         "description": "GetTimeStep()"
     },
     "InputLastPressedKey": {
         "prefix": "InputLastPressedKey",
         "body": [
-            "${0:InputLastPressedKey(}})"
+            "${0:InputLastPressedKey(})"
         ],
         "description": "InputLastPressedKey()"
     },
@@ -116,7 +116,7 @@
     "LastInputDevice": {
         "prefix": "LastInputDevice",
         "body": [
-            "${0:LastInputDevice(}})"
+            "${0:LastInputDevice(})"
         ],
         "description": "LastInputDevice()"
     },
@@ -858,7 +858,7 @@
     "GetWorldBody": {
         "prefix": "GetWorldBody",
         "body": [
-            "${0:GetWorldBody(}})"
+            "${0:GetWorldBody(})"
         ],
         "description": "GetWorldBody()"
     },
@@ -1565,7 +1565,7 @@
     "GetFlashlight": {
         "prefix": "GetFlashlight",
         "body": [
-            "${0:GetFlashlight(}})"
+            "${0:GetFlashlight(})"
         ],
         "description": "GetFlashlight()"
     },
@@ -1803,7 +1803,7 @@
     "GetPlayerPos": {
         "prefix": "GetPlayerPos",
         "body": [
-            "${0:GetPlayerPos(}})"
+            "${0:GetPlayerPos(})"
         ],
         "description": "GetPlayerPos()"
     },
@@ -1817,14 +1817,14 @@
     "GetPlayerPitch": {
         "prefix": "GetPlayerPitch",
         "body": [
-            "${0:GetPlayerPitch(}})"
+            "${0:GetPlayerPitch(})"
         ],
         "description": "GetPlayerPitch()"
     },
     "GetPlayerCrouch": {
         "prefix": "GetPlayerCrouch",
         "body": [
-            "${0:GetPlayerCrouch(}})"
+            "${0:GetPlayerCrouch(})"
         ],
         "description": "GetPlayerCrouch()"
     },
@@ -1866,7 +1866,7 @@
     "GetPlayerRigTransform": {
         "prefix": "GetPlayerRigTransform",
         "body": [
-            "${0:GetPlayerRigTransform(}})"
+            "${0:GetPlayerRigTransform(})"
         ],
         "description": "GetPlayerRigTransform()"
     },
@@ -1908,14 +1908,14 @@
     "GetPlayerEyeTransform": {
         "prefix": "GetPlayerEyeTransform",
         "body": [
-            "${0:GetPlayerEyeTransform(}})"
+            "${0:GetPlayerEyeTransform(})"
         ],
         "description": "GetPlayerEyeTransform()"
     },
     "GetPlayerCameraTransform": {
         "prefix": "GetPlayerCameraTransform",
         "body": [
-            "${0:GetPlayerCameraTransform(}})"
+            "${0:GetPlayerCameraTransform(})"
         ],
         "description": "GetPlayerCameraTransform()"
     },
@@ -1950,7 +1950,7 @@
     "GetPlayerVelocity": {
         "prefix": "GetPlayerVelocity",
         "body": [
-            "${0:GetPlayerVelocity(}})"
+            "${0:GetPlayerVelocity(})"
         ],
         "description": "GetPlayerVelocity()"
     },
@@ -1971,7 +1971,7 @@
     "GetPlayerAnimator": {
         "prefix": "GetPlayerAnimator",
         "body": [
-            "${0:GetPlayerAnimator(}})"
+            "${0:GetPlayerAnimator(})"
         ],
         "description": "GetPlayerAnimator()"
     },
@@ -1985,28 +1985,28 @@
     "GetPlayerVehicle": {
         "prefix": "GetPlayerVehicle",
         "body": [
-            "${0:GetPlayerVehicle(}})"
+            "${0:GetPlayerVehicle(})"
         ],
         "description": "GetPlayerVehicle()"
     },
     "IsPlayerGrounded": {
         "prefix": "IsPlayerGrounded",
         "body": [
-            "${0:IsPlayerGrounded(}})"
+            "${0:IsPlayerGrounded(})"
         ],
         "description": "IsPlayerGrounded()"
     },
     "GetPlayerGrabShape": {
         "prefix": "GetPlayerGrabShape",
         "body": [
-            "${0:GetPlayerGrabShape(}})"
+            "${0:GetPlayerGrabShape(})"
         ],
         "description": "GetPlayerGrabShape()"
     },
     "GetPlayerGrabBody": {
         "prefix": "GetPlayerGrabBody",
         "body": [
-            "${0:GetPlayerGrabBody(}})"
+            "${0:GetPlayerGrabBody(})"
         ],
         "description": "GetPlayerGrabBody()"
     },
@@ -2020,35 +2020,35 @@
     "GetPlayerGrabPoint": {
         "prefix": "GetPlayerGrabPoint",
         "body": [
-            "${0:GetPlayerGrabPoint(}})"
+            "${0:GetPlayerGrabPoint(})"
         ],
         "description": "GetPlayerGrabPoint()"
     },
     "GetPlayerPickShape": {
         "prefix": "GetPlayerPickShape",
         "body": [
-            "${0:GetPlayerPickShape(}})"
+            "${0:GetPlayerPickShape(})"
         ],
         "description": "GetPlayerPickShape()"
     },
     "GetPlayerPickBody": {
         "prefix": "GetPlayerPickBody",
         "body": [
-            "${0:GetPlayerPickBody(}})"
+            "${0:GetPlayerPickBody(})"
         ],
         "description": "GetPlayerPickBody()"
     },
     "GetPlayerInteractShape": {
         "prefix": "GetPlayerInteractShape",
         "body": [
-            "${0:GetPlayerInteractShape(}})"
+            "${0:GetPlayerInteractShape(})"
         ],
         "description": "GetPlayerInteractShape()"
     },
     "GetPlayerInteractBody": {
         "prefix": "GetPlayerInteractBody",
         "body": [
-            "${0:GetPlayerInteractBody(}})"
+            "${0:GetPlayerInteractBody(})"
         ],
         "description": "GetPlayerInteractBody()"
     },
@@ -2062,7 +2062,7 @@
     "GetPlayerScreen": {
         "prefix": "GetPlayerScreen",
         "body": [
-            "${0:GetPlayerScreen(}})"
+            "${0:GetPlayerScreen(})"
         ],
         "description": "GetPlayerScreen()"
     },
@@ -2076,7 +2076,7 @@
     "GetPlayerHealth": {
         "prefix": "GetPlayerHealth",
         "body": [
-            "${0:GetPlayerHealth(}})"
+            "${0:GetPlayerHealth(})"
         ],
         "description": "GetPlayerHealth()"
     },
@@ -2097,7 +2097,7 @@
     "GetPlayerWalkingSpeed": {
         "prefix": "GetPlayerWalkingSpeed",
         "body": [
-            "${0:GetPlayerWalkingSpeed(}})"
+            "${0:GetPlayerWalkingSpeed(})"
         ],
         "description": "GetPlayerWalkingSpeed()"
     },
@@ -2139,21 +2139,21 @@
     "GetToolBody": {
         "prefix": "GetToolBody",
         "body": [
-            "${0:GetToolBody(}})"
+            "${0:GetToolBody(})"
         ],
         "description": "GetToolBody()"
     },
     "GetToolHandPoseLocalTransform": {
         "prefix": "GetToolHandPoseLocalTransform",
         "body": [
-            "${0:GetToolHandPoseLocalTransform(}})"
+            "${0:GetToolHandPoseLocalTransform(})"
         ],
         "description": "GetToolHandPoseLocalTransform()"
     },
     "GetToolHandPoseWorldTransform": {
         "prefix": "GetToolHandPoseWorldTransform",
         "body": [
-            "${0:GetToolHandPoseWorldTransform(}})"
+            "${0:GetToolHandPoseWorldTransform(})"
         ],
         "description": "GetToolHandPoseWorldTransform()"
     },
@@ -2314,7 +2314,7 @@
     "IsMusicPlaying": {
         "prefix": "IsMusicPlaying",
         "body": [
-            "${0:IsMusicPlaying(}})"
+            "${0:IsMusicPlaying(})"
         ],
         "description": "IsMusicPlaying()"
     },
@@ -2328,7 +2328,7 @@
     "GetMusicProgress": {
         "prefix": "GetMusicProgress",
         "body": [
-            "${0:GetMusicProgress(}})"
+            "${0:GetMusicProgress(})"
         ],
         "description": "GetMusicProgress()"
     },
@@ -2461,7 +2461,7 @@
     "CreatePathPlanner": {
         "prefix": "CreatePathPlanner",
         "body": [
-            "${0:CreatePathPlanner(}})"
+            "${0:CreatePathPlanner(})"
         ],
         "description": "CreatePathPlanner()"
     },
@@ -2510,7 +2510,7 @@
     "GetLastSound": {
         "prefix": "GetLastSound",
         "body": [
-            "${0:GetLastSound(}})"
+            "${0:GetLastSound(})"
         ],
         "description": "GetLastSound()"
     },
@@ -2692,7 +2692,7 @@
     "GetFireCount": {
         "prefix": "GetFireCount",
         "body": [
-            "${0:GetFireCount(}})"
+            "${0:GetFireCount(})"
         ],
         "description": "GetFireCount()"
     },
@@ -2720,7 +2720,7 @@
     "GetCameraTransform": {
         "prefix": "GetCameraTransform",
         "body": [
-            "${0:GetCameraTransform(}})"
+            "${0:GetCameraTransform(})"
         ],
         "description": "GetCameraTransform()"
     },
@@ -2979,7 +2979,7 @@
     "GetGravity": {
         "prefix": "GetGravity",
         "body": [
-            "${0:GetGravity(}})"
+            "${0:GetGravity(})"
         ],
         "description": "GetGravity()"
     },
@@ -2993,7 +2993,7 @@
     "GetFps": {
         "prefix": "GetFps",
         "body": [
-            "${0:GetFps(}})"
+            "${0:GetFps(})"
         ],
         "description": "GetFps()"
     },
@@ -3021,28 +3021,28 @@
     "UiWidth": {
         "prefix": "UiWidth",
         "body": [
-            "${0:UiWidth(}})"
+            "${0:UiWidth(})"
         ],
         "description": "UiWidth()"
     },
     "UiHeight": {
         "prefix": "UiHeight",
         "body": [
-            "${0:UiHeight(}})"
+            "${0:UiHeight(})"
         ],
         "description": "UiHeight()"
     },
     "UiCenter": {
         "prefix": "UiCenter",
         "body": [
-            "${0:UiCenter(}})"
+            "${0:UiCenter(})"
         ],
         "description": "UiCenter()"
     },
     "UiMiddle": {
         "prefix": "UiMiddle",
         "body": [
-            "${0:UiMiddle(}})"
+            "${0:UiMiddle(})"
         ],
         "description": "UiMiddle()"
     },
@@ -3091,7 +3091,7 @@
     "UiGetScale": {
         "prefix": "UiGetScale",
         "body": [
-            "${0:UiGetScale(}})"
+            "${0:UiGetScale(})"
         ],
         "description": "UiGetScale()"
     },
@@ -3112,7 +3112,7 @@
     "UiGetCurrentWindow": {
         "prefix": "UiGetCurrentWindow",
         "body": [
-            "${0:UiGetCurrentWindow(}})"
+            "${0:UiGetCurrentWindow(})"
         ],
         "description": "UiGetCurrentWindow()"
     },
@@ -3147,14 +3147,14 @@
     "UiSafeMargins": {
         "prefix": "UiSafeMargins",
         "body": [
-            "${0:UiSafeMargins(}})"
+            "${0:UiSafeMargins(})"
         ],
         "description": "UiSafeMargins()"
     },
     "UiCanvasSize": {
         "prefix": "UiCanvasSize",
         "body": [
-            "${0:UiCanvasSize(}})"
+            "${0:UiCanvasSize(})"
         ],
         "description": "UiCanvasSize()"
     },
@@ -3203,21 +3203,21 @@
     "UiReceivesInput": {
         "prefix": "UiReceivesInput",
         "body": [
-            "${0:UiReceivesInput(}})"
+            "${0:UiReceivesInput(})"
         ],
         "description": "UiReceivesInput()"
     },
     "UiGetMousePos": {
         "prefix": "UiGetMousePos",
         "body": [
-            "${0:UiGetMousePos(}})"
+            "${0:UiGetMousePos(})"
         ],
         "description": "UiGetMousePos()"
     },
     "UiGetCanvasMousePos": {
         "prefix": "UiGetCanvasMousePos",
         "body": [
-            "${0:UiGetCanvasMousePos(}})"
+            "${0:UiGetCanvasMousePos(})"
         ],
         "description": "UiGetCanvasMousePos()"
     },
@@ -3266,7 +3266,7 @@
     "UiFontHeight": {
         "prefix": "UiFontHeight",
         "body": [
-            "${0:UiFontHeight(}})"
+            "${0:UiFontHeight(})"
         ],
         "description": "UiFontHeight()"
     },
@@ -3532,7 +3532,7 @@
     "UiGetScreen": {
         "prefix": "UiGetScreen",
         "body": [
-            "${0:UiGetScreen(}})"
+            "${0:UiGetScreen(})"
         ],
         "description": "UiGetScreen()"
     },
@@ -3602,7 +3602,7 @@
     "UiFocusedComponentId": {
         "prefix": "UiFocusedComponentId",
         "body": [
-            "${0:UiFocusedComponentId(}})"
+            "${0:UiFocusedComponentId(})"
         ],
         "description": "UiFocusedComponentId()"
     },
@@ -3616,7 +3616,7 @@
     "UiGetItemSize": {
         "prefix": "UiGetItemSize",
         "body": [
-            "${0:UiGetItemSize(}})"
+            "${0:UiGetItemSize(})"
         ],
         "description": "UiGetItemSize()"
     },
@@ -3651,7 +3651,7 @@
     "UiEndFrame": {
         "prefix": "UiEndFrame",
         "body": [
-            "${0:UiEndFrame(}})"
+            "${0:UiEndFrame(})"
         ],
         "description": "UiEndFrame()"
     },
@@ -3665,14 +3665,14 @@
     "UiGetFrameNo": {
         "prefix": "UiGetFrameNo",
         "body": [
-            "${0:UiGetFrameNo(}})"
+            "${0:UiGetFrameNo(})"
         ],
         "description": "UiGetFrameNo()"
     },
     "UiGetLanguage": {
         "prefix": "UiGetLanguage",
         "body": [
-            "${0:UiGetLanguage(}})"
+            "${0:UiGetLanguage(})"
         ],
         "description": "UiGetLanguage()"
     },
