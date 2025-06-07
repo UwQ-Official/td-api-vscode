@@ -1,5 +1,5 @@
 // Generated with a python script, with the help of Gemini
-// Generated from https://teardowngame.com/modding/api.xml v1.6.0
+// Generated from https://teardowngame.com/experimental/api.xml v1.6.3
 {
     "GetIntParam": {
         "prefix": "GetIntParam",
@@ -942,9 +942,9 @@
     "GetShapeMaterialAtPosition": {
         "prefix": "GetShapeMaterialAtPosition",
         "body": [
-            "${0:GetShapeMaterialAtPosition(}${1:handle}, ${2:pos})"
+            "${0:GetShapeMaterialAtPosition(}${1:handle}, ${2:pos}, ${3:includeUnphysical})"
         ],
-        "description": "GetShapeMaterialAtPosition(handle: number, pos: TVec)"
+        "description": "GetShapeMaterialAtPosition(handle: number, pos: TVec, includeUnphysical: boolean)"
     },
     "GetShapeMaterialAtIndex": {
         "prefix": "GetShapeMaterialAtIndex",
@@ -1001,6 +1001,13 @@
             "SetShapeCollisionFilter(${1:handle}, ${2:layer}, ${3:mask})"
         ],
         "description": "SetShapeCollisionFilter(handle: number, layer: number, mask: number)"
+    },
+    "GetShapeCollisionFilter": {
+        "prefix": "GetShapeCollisionFilter",
+        "body": [
+            "${0:GetShapeCollisionFilter(}${1:handle})"
+        ],
+        "description": "GetShapeCollisionFilter(handle: number)"
     },
     "CreateShape": {
         "prefix": "CreateShape",
@@ -2401,6 +2408,13 @@
             "QueryRejectBody(${1:body})"
         ],
         "description": "QueryRejectBody(body: number)"
+    },
+    "QueryRejectBodies": {
+        "prefix": "QueryRejectBodies",
+        "body": [
+            "QueryRejectBodies(${1:bodies})"
+        ],
+        "description": "QueryRejectBodies(bodies: table)"
     },
     "QueryRejectShape": {
         "prefix": "QueryRejectShape",

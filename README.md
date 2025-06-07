@@ -5,6 +5,7 @@ This is a very simple (up-to-date) code snippet extension for Teardown's modding
 ## Features
 
 For now it only supports regular API functions (excluding voxscript ones).
+If you want me to add support for voxscript functions, msg me on discord (@uwq_)
 
 ## Known Issues
 
@@ -21,3 +22,7 @@ Expect updates to come with Teardown Documentation updates.
 ### 1.0.1
 
 - Fixed issue [#1](https://github.com/UwQ-Official/td-api-vscode/issues/1)
+
+### 1.0.2
+
+- Updated to Teardown Version 1.6.3
