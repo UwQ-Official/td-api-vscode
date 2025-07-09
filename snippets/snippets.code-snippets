@@ -1,5 +1,3 @@
-// Generated with a python script, with the help of Gemini
-// Generated from https://teardowngame.com/experimental/api.xml v1.6.3
 {
     "GetIntParam": {
         "prefix": "GetIntParam",
@@ -1828,6 +1826,20 @@
         ],
         "description": "GetPlayerPitch()"
     },
+    "GetPlayerYaw": {
+        "prefix": "GetPlayerYaw",
+        "body": [
+            "${0:GetPlayerYaw(})"
+        ],
+        "description": "GetPlayerYaw()"
+    },
+    "SetPlayerPitch": {
+        "prefix": "SetPlayerPitch",
+        "body": [
+            "SetPlayerPitch(${1:pitch})"
+        ],
+        "description": "SetPlayerPitch(pitch: number)"
+    },
     "GetPlayerCrouch": {
         "prefix": "GetPlayerCrouch",
         "body": [
@@ -2002,6 +2014,13 @@
             "${0:IsPlayerGrounded(})"
         ],
         "description": "IsPlayerGrounded()"
+    },
+    "GetPlayerGroundContact": {
+        "prefix": "GetPlayerGroundContact",
+        "body": [
+            "${0:GetPlayerGroundContact(})"
+        ],
+        "description": "GetPlayerGroundContact()"
     },
     "GetPlayerGrabShape": {
         "prefix": "GetPlayerGrabShape",
@@ -2191,6 +2210,13 @@
             "SetToolTransform(${1:transform}, ${2:sway})"
         ],
         "description": "SetToolTransform(transform: TTransform, sway: number)"
+    },
+    "SetToolAllowedZoom": {
+        "prefix": "SetToolAllowedZoom",
+        "body": [
+            "SetToolAllowedZoom(${1:zoom}, ${2:zoom})"
+        ],
+        "description": "SetToolAllowedZoom(zoom: number, zoom: sensitivity])"
     },
     "SetToolTransformOverride": {
         "prefix": "SetToolTransformOverride",
@@ -3003,6 +3029,27 @@
             "SetGravity(${1:vec})"
         ],
         "description": "SetGravity(vec: TVec)"
+    },
+    "SetPlayerOrientation": {
+        "prefix": "SetPlayerOrientation",
+        "body": [
+            "SetPlayerOrientation(${1:orientation})"
+        ],
+        "description": "SetPlayerOrientation(orientation: Quat)"
+    },
+    "GetPlayerOrientation": {
+        "prefix": "GetPlayerOrientation",
+        "body": [
+            "${0:GetPlayerOrientation(})"
+        ],
+        "description": "GetPlayerOrientation()"
+    },
+    "GetPlayerUp": {
+        "prefix": "GetPlayerUp",
+        "body": [
+            "${0:GetPlayerUp(})"
+        ],
+        "description": "GetPlayerUp()"
     },
     "GetFps": {
         "prefix": "GetFps",

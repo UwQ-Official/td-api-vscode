@@ -1,10 +1,10 @@
 {
   "name": "td-api-snippets",
-  "displayName": "Teardown API Snippets (1.6.3)",
+  "displayName": "Teardown API Snippets (1.7.0)",
   "icon": "image/icon.png",
   "publisher": "UwQ",
-  "description": "Updated Teardown API code snippets",
-  "version": "1.0.2",
+  "description": "Up to date Teardown API code snippets",
+  "version": "1.0.3",
   "engines": {
     "vscode": "^1.97.0"
   },

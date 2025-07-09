@@ -1276,6 +1276,12 @@
 	<function name="GetPlayerPitch">
 		<output name="pitch" type="number" desc="Current player pitch angle"/>
 	</function>
+	<function name="GetPlayerYaw">
+		<output name="yaw" type="number" desc="Current player yaw angle"/>
+	</function>
+	<function name="SetPlayerPitch">
+		<input name="pitch" type="number" optional="false" desc="Pitch."/>
+	</function>
 	<function name="GetPlayerCrouch">
 		<output name="recoil" type="number" desc="Current player crouch"/>
 	</function>
@@ -1360,6 +1366,12 @@
 	</function>
 	<function name="IsPlayerGrounded">
 		<output name="isGrounded" type="boolean" desc="Whether the player is grounded"/>
+	</function>
+	<function name="GetPlayerGroundContact">
+		<output name="contact" type="boolean" desc="Whether the player is grounded"/>
+		<output name="shape" type="number" desc="Handle to shape"/>
+		<output name="point" type="Vec" desc="Point of contact"/>
+		<output name="normal" type="Vec" desc="Normal of contact"/>
 	</function>
 	<function name="GetPlayerGrabShape">
 		<output name="handle" type="number" desc="Handle to grabbed shape or zero if not grabbing."/>
@@ -1449,6 +1461,10 @@
 	<function name="SetToolTransform">
 		<input name="transform" type="TTransform" optional="false" desc="Tool body transform"/>
 		<input name="sway" type="number" optional="true" desc="Tool sway amount. Default is 1.0."/>
+	</function>
+	<function name="SetToolAllowedZoom">
+		<input name="zoom" type="number" optional="false" desc="Zoom factor"/>
+		<input name="zoom" type="sensitivity]" optional="true" desc="Input sensitivity when zoomed in. Default is 1.0."/>
 	</function>
 	<function name="SetToolTransformOverride">
 		<input name="transform" type="TTransform" optional="false" desc="Tool body transform"/>
@@ -2013,6 +2029,15 @@
 	<function name="SetGravity">
 		<input name="vec" type="TVec" optional="false" desc="Gravity vector"/>
 	</function>
+	<function name="SetPlayerOrientation">
+		<input name="orientation" type="Quat" optional="false" desc="Base orientation"/>
+	</function>
+	<function name="GetPlayerOrientation">
+		<output name="orientation" type="TQuat" desc="Player base orientation"/>
+	</function>
+	<function name="GetPlayerUp">
+		<output name="up" type="TVec" desc="Player up vector"/>
+	</function>
 	<function name="GetFps">
 		<output name="fps" type="number" desc="Frames per second"/>
 	</function>
@@ -2113,7 +2138,7 @@
 		<input name="alignment" type="string" optional="false" desc="Alignment keywords"/>
 	</function>
 	<function name="UiTextAlignment">
-		<input name="alignment" type="string" optional="false" desc="Alignment keywords"/>
+		<input name="alignment" type="string" optional="false" desc="Alignment keyword"/>
 	</function>
 	<function name="UiModalBegin">
 		<input name="force" type="boolean" optional="true" desc="Pass true if you need to increase the priority of this modal in the context"/>

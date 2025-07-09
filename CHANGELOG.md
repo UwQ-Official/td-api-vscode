@@ -17,3 +17,7 @@
 ## 1.0.2
 
 - Updated to Teardown Version 1.6.3
+
+## 1.0.3
+
+- Updated to Teardown Version 1.7.0
